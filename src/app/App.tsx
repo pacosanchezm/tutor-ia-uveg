@@ -8,6 +8,7 @@ import Image from "next/image";
 // UI components
 import Transcript from "./components/Transcript";
 import Events from "./components/Events";
+import Board from "./components/Board";
 import BottomToolbar from "./components/BottomToolbar";
 
 // Types
@@ -27,12 +28,14 @@ import { chatSupervisorScenario } from "@/app/agentConfigs/chatSupervisor";
 import { customerServiceRetailCompanyName } from "@/app/agentConfigs/customerServiceRetail";
 import { chatSupervisorCompanyName } from "@/app/agentConfigs/chatSupervisor";
 import { simpleHandoffScenario } from "@/app/agentConfigs/simpleHandoff";
+import { universityTutorScenario, universityTutorInstitutionName } from "@/app/agentConfigs/universityTutor";
 
 // Map used by connect logic for scenarios defined via the SDK.
 const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
   simpleHandoff: simpleHandoffScenario,
   customerServiceRetail: customerServiceRetailScenario,
   chatSupervisor: chatSupervisorScenario,
+  universityTutor: universityTutorScenario,
 };
 
 import useAudioDownload from "./hooks/useAudioDownload";
@@ -107,6 +110,21 @@ function App() {
 
   const [isEventsPaneExpanded, setIsEventsPaneExpanded] =
     useState<boolean>(true);
+  const [rightPaneView, setRightPaneView] =
+    useState<"logs" | "board">(() => {
+      if (typeof window === "undefined") return "board";
+      const stored = localStorage.getItem("rightPaneView");
+      return stored === "logs" || stored === "board" ? (stored as "logs" | "board") : "board";
+    });
+  const [isTranscriptVisible, setIsTranscriptVisible] =
+    useState<boolean>(() => {
+      if (typeof window === "undefined") return false;
+      const stored = localStorage.getItem("transcriptVisible");
+      return stored ? stored === "true" : false;
+    });
+  const [autoConnectEnabled, setAutoConnectEnabled] = useState<boolean>(false);
+  const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState<boolean>(false);
+  const settingsMenuRef = useRef<HTMLDivElement | null>(null);
   const [userText, setUserText] = useState<string>("");
   const [isPTTActive, setIsPTTActive] = useState<boolean>(false);
   const [isPTTUserSpeaking, setIsPTTUserSpeaking] = useState<boolean>(false);
@@ -151,10 +169,14 @@ function App() {
   }, [searchParams]);
 
   useEffect(() => {
-    if (selectedAgentName && sessionStatus === "DISCONNECTED") {
+    if (
+      autoConnectEnabled &&
+      selectedAgentName &&
+      sessionStatus === "DISCONNECTED"
+    ) {
       connectToRealtime();
     }
-  }, [selectedAgentName]);
+  }, [selectedAgentName, sessionStatus, autoConnectEnabled]);
 
   useEffect(() => {
     if (
@@ -212,9 +234,12 @@ function App() {
           reorderedAgents.unshift(agent);
         }
 
-        const companyName = agentSetKey === 'customerServiceRetail'
-          ? customerServiceRetailCompanyName
-          : chatSupervisorCompanyName;
+        const companyNameMap: Record<string, string> = {
+          customerServiceRetail: customerServiceRetailCompanyName,
+          chatSupervisor: chatSupervisorCompanyName,
+          universityTutor: universityTutorInstitutionName,
+        };
+        const companyName = companyNameMap[agentSetKey] ?? chatSupervisorCompanyName;
         const guardrail = createModerationGuardrail(companyName);
 
         await connect({
@@ -318,9 +343,11 @@ function App() {
 
   const onToggleConnection = () => {
     if (sessionStatus === "CONNECTED" || sessionStatus === "CONNECTING") {
+      setAutoConnectEnabled(false);
       disconnectFromRealtime();
       setSessionStatus("DISCONNECTED");
     } else {
+      setAutoConnectEnabled(true);
       connectToRealtime();
     }
   };
@@ -365,6 +392,14 @@ function App() {
     if (storedAudioPlaybackEnabled) {
       setIsAudioPlaybackEnabled(storedAudioPlaybackEnabled === "true");
     }
+    const storedRightPaneView = localStorage.getItem("rightPaneView");
+    if (storedRightPaneView === "board" || storedRightPaneView === "logs") {
+      setRightPaneView(storedRightPaneView as "logs" | "board");
+    }
+    const storedTranscriptVisible = localStorage.getItem("transcriptVisible");
+    if (storedTranscriptVisible) {
+      setIsTranscriptVisible(storedTranscriptVisible === "true");
+    }
   }, []);
 
   useEffect(() => {
@@ -381,6 +416,30 @@ function App() {
       isAudioPlaybackEnabled.toString()
     );
   }, [isAudioPlaybackEnabled]);
+
+  useEffect(() => {
+    localStorage.setItem("rightPaneView", rightPaneView);
+  }, [rightPaneView]);
+
+  useEffect(() => {
+    localStorage.setItem("transcriptVisible", isTranscriptVisible.toString());
+  }, [isTranscriptVisible]);
+
+  useEffect(() => {
+    if (!isSettingsMenuOpen) return;
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        settingsMenuRef.current &&
+        !settingsMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsSettingsMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSettingsMenuOpen]);
 
   useEffect(() => {
     if (audioElementRef.current) {
@@ -439,94 +498,201 @@ function App() {
           className="flex items-center cursor-pointer"
           onClick={() => window.location.reload()}
         >
-          <div>
+          <div className="mr-2 flex items-center">
             <Image
-              src="/openai-logomark.svg"
-              alt="OpenAI Logo"
-              width={20}
-              height={20}
-              className="mr-2"
+              src="/tutor-ia-uveg-logo.jpg"
+              alt="Tutor-IA UVEG"
+              width={80}
+              height={80}
+              className="object-contain max-w-[80px]"
             />
           </div>
-          <div>
-            Realtime API <span className="text-gray-500">Agents</span>
+          <div className="text-xl font-semibold text-gray-900">
+            Tutor-ia <span className="text-gray-500">Uveg</span>
           </div>
         </div>
-        <div className="flex items-center">
-          <label className="flex items-center text-base gap-1 mr-2 font-medium">
-            Scenario
-          </label>
-          <div className="relative inline-block">
-            <select
-              value={agentSetKey}
-              onChange={handleAgentChange}
-              className="appearance-none border border-gray-300 rounded-lg text-base px-2 py-1 pr-8 cursor-pointer font-normal focus:outline-none"
+        <div className="flex items-center gap-4 flex-wrap justify-end">
+          <div className="relative" ref={settingsMenuRef}>
+            <button
+              type="button"
+              onClick={() => setIsSettingsMenuOpen((prev) => !prev)}
+              className="border border-gray-300 rounded-lg text-base px-3 py-1 cursor-pointer font-normal hover:bg-gray-100 whitespace-nowrap"
+              aria-label="Abrir menú de configuración"
             >
-              {Object.keys(allAgentSets).map((agentKey) => (
-                <option key={agentKey} value={agentKey}>
-                  {agentKey}
-                </option>
-              ))}
-            </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 text-gray-600">
-              <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                <path
-                  fillRule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.44l3.71-3.21a.75.75 0 111.04 1.08l-4.25 3.65a.75.75 0 01-1.04 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
+              ☰
+            </button>
+            {isSettingsMenuOpen && (
+              <div className="absolute right-0 mt-2 w-64 rounded-lg border border-gray-200 bg-white shadow-xl p-4 space-y-4 z-20">
+                <div>
+                  <label className="block text-sm font-medium text-gray-600 mb-1">
+                    Scenario
+                  </label>
+                  <div className="relative">
+                    <select
+                      value={agentSetKey}
+                      onChange={handleAgentChange}
+                      className="appearance-none border border-gray-300 rounded-md text-sm px-2 py-1 pr-8 w-full focus:outline-none"
+                    >
+                      {Object.keys(allAgentSets).map((agentKey) => (
+                        <option key={agentKey} value={agentKey}>
+                          {agentKey}
+                        </option>
+                      ))}
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 text-gray-500">
+                      <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 10.44l3.71-3.21a.75.75 0 111.04 1.08l-4.25 3.65a.75.75 0 01-1.04 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
 
-          {agentSetKey && (
-            <div className="flex items-center ml-6">
-              <label className="flex items-center text-base gap-1 mr-2 font-medium">
-                Agent
-              </label>
-              <div className="relative inline-block">
-                <select
-                  value={selectedAgentName}
-                  onChange={handleSelectedAgentChange}
-                  className="appearance-none border border-gray-300 rounded-lg text-base px-2 py-1 pr-8 cursor-pointer font-normal focus:outline-none"
-                >
-                  {selectedAgentConfigSet?.map((agent) => (
-                    <option key={agent.name} value={agent.name}>
-                      {agent.name}
-                    </option>
-                  ))}
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 text-gray-600">
-                  <svg
-                    className="h-4 w-4"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.44l3.71-3.21a.75.75 0 111.04 1.08l-4.25 3.65a.75.75 0 01-1.04 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                      clipRule="evenodd"
+                {agentSetKey && (
+                  <div>
+                    <label className="block text-sm font-medium text-gray-600 mb-1">
+                      Agent
+                    </label>
+                    <div className="relative">
+                      <select
+                        value={selectedAgentName}
+                        onChange={handleSelectedAgentChange}
+                        className="appearance-none border border-gray-300 rounded-md text-sm px-2 py-1 pr-8 w-full focus:outline-none"
+                      >
+                        {selectedAgentConfigSet?.map((agent) => (
+                          <option key={agent.name} value={agent.name}>
+                            {agent.name}
+                          </option>
+                        ))}
+                      </select>
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 text-gray-500">
+                        <svg
+                          className="h-4 w-4"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 10.44l3.71-3.21a.75.75 0 111.04 1.08l-4.25 3.65a.75.75 0 01-1.04 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                <div>
+                  <div className="flex items-center justify-between text-sm mb-2">
+                    <span className="font-medium text-gray-600">Panel lateral</span>
+                    <input
+                      type="checkbox"
+                      checked={isEventsPaneExpanded}
+                      onChange={(e) => setIsEventsPaneExpanded(e.target.checked)}
+                      className="w-4 h-4"
                     />
-                  </svg>
+                  </div>
+                  <div className="inline-flex rounded-md border border-gray-300 overflow-hidden w-full">
+                    <button
+                      type="button"
+                      onClick={() => setRightPaneView("logs")}
+                      className={`flex-1 px-2 py-1 text-sm ${
+                        rightPaneView === "logs"
+                          ? "bg-gray-900 text-white"
+                          : "bg-white text-gray-700"
+                      }`}
+                    >
+                      Log
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setRightPaneView("board")}
+                      className={`flex-1 px-2 py-1 text-sm ${
+                        rightPaneView === "board"
+                          ? "bg-gray-900 text-white"
+                          : "bg-white text-gray-700"
+                      }`}
+                    >
+                      Board
+                    </button>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="font-medium text-gray-600">Transcript</span>
+                    <input
+                      type="checkbox"
+                      checked={isTranscriptVisible}
+                      onChange={(e) => setIsTranscriptVisible(e.target.checked)}
+                      className="w-4 h-4"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-600 mb-1">
+                    Codec
+                  </label>
+                  <select
+                    value={urlCodec}
+                    onChange={(e) => handleCodecChange(e.target.value)}
+                    className="border border-gray-300 rounded-md text-sm px-2 py-1 w-full focus:outline-none"
+                  >
+                    <option value="opus">Opus (48 kHz)</option>
+                    <option value="pcmu">PCMU (8 kHz)</option>
+                    <option value="pcma">PCMA (8 kHz)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="font-medium text-gray-600">Audio playback</span>
+                    <input
+                      type="checkbox"
+                      checked={isAudioPlaybackEnabled}
+                      onChange={(e) => setIsAudioPlaybackEnabled(e.target.checked)}
+                      className="w-4 h-4"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
 
       <div className="flex flex-1 gap-2 px-2 overflow-hidden relative">
-        <Transcript
-          userText={userText}
-          setUserText={setUserText}
-          onSendMessage={handleSendTextMessage}
-          downloadRecording={downloadRecording}
-          canSend={
-            sessionStatus === "CONNECTED"
-          }
-        />
+        {isTranscriptVisible && (
+          <div className="flex flex-1 min-w-0">
+            <Transcript
+              userText={userText}
+              setUserText={setUserText}
+              onSendMessage={handleSendTextMessage}
+              downloadRecording={downloadRecording}
+              canSend={sessionStatus === "CONNECTED"}
+            />
+          </div>
+        )}
 
-        <Events isExpanded={isEventsPaneExpanded} />
+        {rightPaneView === "logs" ? (
+          <Events
+            isExpanded={isEventsPaneExpanded}
+            expandedWidthClass={
+              isTranscriptVisible ? "w-1/2 overflow-auto" : "w-full overflow-auto"
+            }
+          />
+        ) : (
+          <Board
+            isExpanded={isEventsPaneExpanded}
+            expandedWidthClass={
+              isTranscriptVisible ? "w-1/2 overflow-auto" : "w-full overflow-auto"
+            }
+          />
+        )}
       </div>
 
       <BottomToolbar
@@ -537,12 +703,6 @@ function App() {
         isPTTUserSpeaking={isPTTUserSpeaking}
         handleTalkButtonDown={handleTalkButtonDown}
         handleTalkButtonUp={handleTalkButtonUp}
-        isEventsPaneExpanded={isEventsPaneExpanded}
-        setIsEventsPaneExpanded={setIsEventsPaneExpanded}
-        isAudioPlaybackEnabled={isAudioPlaybackEnabled}
-        setIsAudioPlaybackEnabled={setIsAudioPlaybackEnabled}
-        codec={urlCodec}
-        onCodecChange={handleCodecChange}
       />
     </div>
   );

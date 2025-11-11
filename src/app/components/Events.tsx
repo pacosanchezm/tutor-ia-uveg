@@ -6,9 +6,10 @@ import { LoggedEvent } from "@/app/types";
 
 export interface EventsProps {
   isExpanded: boolean;
+  expandedWidthClass?: string;
 }
 
-function Events({ isExpanded }: EventsProps) {
+function Events({ isExpanded, expandedWidthClass }: EventsProps) {
   const [prevEventLogs, setPrevEventLogs] = useState<LoggedEvent[]>([]);
   const eventLogsContainerRef = useRef<HTMLDivElement | null>(null);
 
@@ -34,7 +35,9 @@ function Events({ isExpanded }: EventsProps) {
   return (
     <div
       className={
-        (isExpanded ? "w-1/2 overflow-auto" : "w-0 overflow-hidden opacity-0") +
+        (isExpanded
+          ? expandedWidthClass ?? "w-1/2 overflow-auto"
+          : "w-0 overflow-hidden opacity-0") +
         " transition-all rounded-xl duration-200 ease-in-out flex-col bg-white"
       }
       ref={eventLogsContainerRef}
