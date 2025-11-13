@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { v4 as uuidv4 } from "uuid";
 
@@ -12,7 +12,7 @@ import Board from "./components/Board";
 import BottomToolbar from "./components/BottomToolbar";
 
 // Types
-import { SessionStatus } from "@/app/types";
+import { SessionStatus, BoardContentAction } from "@/app/types";
 import type { RealtimeAgent } from '@openai/agents/realtime';
 
 // Context providers & hooks
@@ -125,6 +125,22 @@ function App() {
   const [autoConnectEnabled, setAutoConnectEnabled] = useState<boolean>(false);
   const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState<boolean>(false);
   const settingsMenuRef = useRef<HTMLDivElement | null>(null);
+  const [boardContentKey, setBoardContentKey] =
+    useState<BoardContentAction>("CLEAN");
+  const [selectedRealtimeModel, setSelectedRealtimeModel] = useState<string>(
+    () => {
+      if (typeof window === "undefined") return "gpt-realtime-mini";
+      return localStorage.getItem("realtimeModel") ?? "gpt-realtime-mini";
+    },
+  );
+  const prevAgentNameRef = useRef<string | null>(null);
+  const handleBoardContentAction = useCallback(
+    (action: BoardContentAction) => {
+      setBoardContentKey(action);
+      addTranscriptBreadcrumb("Board", { action });
+    },
+    [addTranscriptBreadcrumb],
+  );
   const [userText, setUserText] = useState<string>("");
   const [isPTTActive, setIsPTTActive] = useState<boolean>(false);
   const [isPTTUserSpeaking, setIsPTTUserSpeaking] = useState<boolean>(false);
@@ -176,7 +192,15 @@ function App() {
     ) {
       connectToRealtime();
     }
-  }, [selectedAgentName, sessionStatus, autoConnectEnabled]);
+  }, [selectedAgentName, sessionStatus, autoConnectEnabled, selectedRealtimeModel]);
+
+  useEffect(() => {
+    if (!selectedAgentName) return;
+    if (prevAgentNameRef.current === selectedAgentName) return;
+    prevAgentNameRef.current = selectedAgentName;
+    setBoardContentKey("CLEAN");
+    addTranscriptBreadcrumb("Board", { action: "CLEAN", reason: "agent_change" });
+  }, [selectedAgentName, addTranscriptBreadcrumb]);
 
   useEffect(() => {
     if (
@@ -202,7 +226,9 @@ function App() {
 
   const fetchEphemeralKey = async (): Promise<string | null> => {
     logClientEvent({ url: "/session" }, "fetch_session_token_request");
-    const tokenResponse = await fetch("/api/session");
+    const tokenResponse = await fetch(
+      `/api/session?model=${encodeURIComponent(selectedRealtimeModel)}`,
+    );
     const data = await tokenResponse.json();
     logServerEvent(data, "fetch_session_token_response");
 
@@ -249,8 +275,13 @@ function App() {
           outputGuardrails: [guardrail],
           extraContext: {
             addTranscriptBreadcrumb,
+            handleBoardContentAction,
           },
+          model: selectedRealtimeModel,
         });
+        console.log(
+          `[Tutor-ia] Sesión conectada con modelo ${selectedRealtimeModel}`,
+        );
       } catch (err) {
         console.error("Error connecting via SDK:", err);
         setSessionStatus("DISCONNECTED");
@@ -426,6 +457,14 @@ function App() {
   }, [isTranscriptVisible]);
 
   useEffect(() => {
+    localStorage.setItem("realtimeModel", selectedRealtimeModel);
+    if (sessionStatus !== "DISCONNECTED") {
+      disconnectFromRealtime();
+      setAutoConnectEnabled(true);
+    }
+  }, [selectedRealtimeModel]);
+
+  useEffect(() => {
     if (!isSettingsMenuOpen) return;
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -495,21 +534,19 @@ function App() {
     <div className="text-base flex flex-col h-screen bg-gray-100 text-gray-800 relative">
       <div className="p-5 text-lg font-semibold flex justify-between items-center">
         <div
-          className="flex items-center cursor-pointer"
+          className="flex items-center cursor-pointer gap-4"
           onClick={() => window.location.reload()}
         >
-          <div className="mr-2 flex items-center">
+          <div className="flex items-center">
             <Image
               src="/tutor-ia-uveg-logo.jpg"
               alt="Tutor-IA UVEG"
-              width={80}
-              height={80}
-              className="object-contain max-w-[80px]"
+              width={160}
+              height={160}
+              className="object-contain max-w-[160px] mix-blend-multiply"
             />
           </div>
-          <div className="text-xl font-semibold text-gray-900">
-            Tutor-ia <span className="text-gray-500">Uveg</span>
-          </div>
+          <div className="text-3xl font-semibold text-gray-900">Tutor-ia</div>
         </div>
         <div className="flex items-center gap-4 flex-wrap justify-end">
           <div className="relative" ref={settingsMenuRef}>
@@ -523,6 +560,20 @@ function App() {
             </button>
             {isSettingsMenuOpen && (
               <div className="absolute right-0 mt-2 w-64 rounded-lg border border-gray-200 bg-white shadow-xl p-4 space-y-4 z-20">
+                <div>
+                  <label className="block text-sm font-medium text-gray-600 mb-1">
+                    Modelo
+                  </label>
+                  <select
+                    value={selectedRealtimeModel}
+                    onChange={(e) => setSelectedRealtimeModel(e.target.value)}
+                    className="border border-gray-300 rounded-md text-sm px-2 py-1 w-full focus:outline-none"
+                  >
+                    <option value="gpt-realtime-mini">gpt-realtime-mini</option>
+                    <option value="gpt-realtime">gpt-realtime</option>
+                  </select>
+                </div>
+
                 <div>
                   <label className="block text-sm font-medium text-gray-600 mb-1">
                     Scenario
@@ -691,6 +742,7 @@ function App() {
             expandedWidthClass={
               isTranscriptVisible ? "w-1/2 overflow-auto" : "w-full overflow-auto"
             }
+            contentKey={boardContentKey}
           />
         )}
       </div>

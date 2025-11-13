@@ -19,7 +19,6 @@ function BottomToolbar({
   isPTTUserSpeaking,
   handleTalkButtonDown,
   handleTalkButtonUp,
-  isAudioPlaybackEnabled,
 }: BottomToolbarProps) {
   const isConnected = sessionStatus === "CONNECTED";
   const isConnecting = sessionStatus === "CONNECTING";

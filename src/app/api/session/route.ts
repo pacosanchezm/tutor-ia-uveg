@@ -1,6 +1,8 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const { searchParams } = new URL(request.url);
+  const model = searchParams.get("model") ?? "gpt-realtime-mini";
   try {
     const response = await fetch(
       "https://api.openai.com/v1/realtime/sessions",
@@ -11,7 +13,7 @@ export async function GET() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          model: "gpt-realtime-mini",
+          model,
         }),
       }
     );

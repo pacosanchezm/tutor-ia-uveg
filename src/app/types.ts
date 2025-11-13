@@ -146,3 +146,10 @@ export const GuardrailOutputZod = z.object({
 });
 
 export type GuardrailOutput = z.infer<typeof GuardrailOutputZod>;
+
+export type BoardContentAction =
+  | "CLEAN"
+  | "FINANCIAMIENTO"
+  | "INNOVACION"
+  | "FUENTES"
+  | "INSTRUMENTOS";
