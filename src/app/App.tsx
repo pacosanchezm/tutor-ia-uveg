@@ -125,6 +125,8 @@ function App() {
   const [autoConnectEnabled, setAutoConnectEnabled] = useState<boolean>(false);
   const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState<boolean>(false);
   const settingsMenuRef = useRef<HTMLDivElement | null>(null);
+  const [isProfileMenuOpen, setIsProfileMenuOpen] = useState<boolean>(false);
+  const profileMenuRef = useRef<HTMLDivElement | null>(null);
   const [boardContentKey, setBoardContentKey] =
     useState<BoardContentAction>("CLEAN");
   const [selectedRealtimeModel, setSelectedRealtimeModel] = useState<string>(
@@ -133,6 +135,10 @@ function App() {
       return localStorage.getItem("realtimeModel") ?? "gpt-realtime-mini";
     },
   );
+  const [studentName, setStudentName] = useState<string>(() => {
+    if (typeof window === "undefined") return "";
+    return localStorage.getItem("studentName") ?? "";
+  });
   const prevAgentNameRef = useRef<string | null>(null);
   const handleBoardContentAction = useCallback(
     (action: BoardContentAction) => {
@@ -333,9 +339,13 @@ function App() {
       },
     });
 
-    // Send an initial 'hi' message to trigger the agent to greet the user
+    // Send an initial greeting so the agent starts the conversation
     if (shouldTriggerResponse) {
-      sendSimulatedUserMessage('hi');
+      const trimmedName = studentName.trim();
+      const greeting = trimmedName
+        ? `Hola, soy ${trimmedName}. ¿Podrías llamarme por mi nombre durante la lección?`
+        : 'Hola, ¿listo para comenzar la lección?';
+      sendSimulatedUserMessage(greeting);
     }
     return;
   }
@@ -465,6 +475,10 @@ function App() {
   }, [selectedRealtimeModel]);
 
   useEffect(() => {
+    localStorage.setItem("studentName", studentName);
+  }, [studentName]);
+
+  useEffect(() => {
     if (!isSettingsMenuOpen) return;
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -479,6 +493,22 @@ function App() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isSettingsMenuOpen]);
+
+  useEffect(() => {
+    if (!isProfileMenuOpen) return;
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        profileMenuRef.current &&
+        !profileMenuRef.current.contains(event.target as Node)
+      ) {
+        setIsProfileMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isProfileMenuOpen]);
 
   useEffect(() => {
     if (audioElementRef.current) {
@@ -549,6 +579,30 @@ function App() {
           <div className="text-3xl font-semibold text-gray-900">Tutor-ia</div>
         </div>
         <div className="flex items-center gap-4 flex-wrap justify-end">
+          <div className="relative" ref={profileMenuRef}>
+            <button
+              type="button"
+              onClick={() => setIsProfileMenuOpen((prev) => !prev)}
+              className="border border-gray-300 rounded-full text-base px-3 py-1 cursor-pointer font-normal hover:bg-gray-100 whitespace-nowrap"
+              aria-label="Abrir menú de alumno"
+            >
+              👤
+            </button>
+            {isProfileMenuOpen && (
+              <div className="absolute right-0 mt-2 w-64 rounded-lg border border-gray-200 bg-white shadow-xl p-4 space-y-3 z-20">
+                <label className="block text-sm font-medium text-gray-600">
+                  Alumno
+                </label>
+                <input
+                  type="text"
+                  value={studentName}
+                  onChange={(e) => setStudentName(e.target.value)}
+                  placeholder="Nombre del alumno"
+                  className="border border-gray-300 rounded-md text-sm px-2 py-1 w-full focus:outline-none"
+                />
+              </div>
+            )}
+          </div>
           <div className="relative" ref={settingsMenuRef}>
             <button
               type="button"
