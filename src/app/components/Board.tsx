@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Image from "next/image";
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import { BoardContentAction } from "@/app/types";
 
@@ -10,10 +11,14 @@ export interface BoardProps {
   contentKey: BoardContentAction;
 }
 
-const boardContentMap: Record<
-  Exclude<BoardContentAction, "CLEAN">,
-  { title: string; bullets: string[] }
-> = {
+type BoardContentKey = Exclude<BoardContentAction, "CLEAN">;
+
+const boardContentMap: Record<BoardContentKey, {
+  title: string;
+  bullets: string[];
+  image?: string;
+  imageAlt?: string;
+}> = {
   FINANCIAMIENTO: {
     title: "Rol estratégico del financiamiento",
     bullets: [
@@ -45,6 +50,57 @@ const boardContentMap: Record<
       "Arrendamientos financieros para maquinaria y equipo.",
       "Emisión de deuda o capital cuando la empresa ya tiene historial sólido.",
     ],
+  },
+  EVAL_PREGUNTA_1: {
+    title: "Pregunta 1",
+    bullets: [
+      "Menciona cómo se le llama al instrumento de financiamiento que comúnmente conocemos como línea de crédito.",
+      "Responde con el término específico asociado a la línea revolvente.",
+    ],
+  },
+  EVAL_PREGUNTA_2: {
+    title: "Pregunta 2",
+    bullets: [
+      "Explica a qué se refiere el Arrendamiento o Leasing.",
+      "Incluye por qué algunas empresas recurren a él.",
+    ],
+  },
+  EVAL_PREGUNTA_3: {
+    title: "Pregunta 3",
+    bullets: [
+      "Caso María: necesita $50,000 para horno y materia prima.",
+      "Opciones: préstamo familiar, bancario, crédito revolvente, proveedores o financiamiento gubernamental.",
+      "¿Qué opción o combinación recomendarías y por qué?",
+    ],
+    image: "/maria1.png",
+    imageAlt: "Ilustración del caso de María",
+  },
+  HISTORIA_ZAPATERO_1: {
+    title: "Historia del zapatero - Etapa 1",
+    bullets: [
+      "El zapatero de Guadalajara enfrenta una limitación en la producción.",
+      "Describe el contexto o problema inicial que detectaste.",
+    ],
+    image: "/zapaterog1.webp",
+    imageAlt: "Zapatero de Guadalajara etapa 1",
+  },
+  HISTORIA_ZAPATERO_2: {
+    title: "Historia del zapatero - Etapa 2",
+    bullets: [
+      "Solicita un préstamo bancario para adquirir maquinaria especializada.",
+      "Describe los motivos para elegir ese instrumento y los pasos relevantes.",
+    ],
+    image: "/zapaterog2.webp",
+    imageAlt: "Zapatero de Guadalajara etapa 2",
+  },
+  HISTORIA_ZAPATERO_3: {
+    title: "Historia del zapatero - Etapa 3",
+    bullets: [
+      "Con la nueva maquinaria aumenta su producción y ventas.",
+      "Explica cómo planea pagar el crédito y los beneficios obtenidos.",
+    ],
+    image: "/zapaterog3.webp",
+    imageAlt: "Zapatero de Guadalajara etapa 3",
   },
 };
 
@@ -131,7 +187,18 @@ function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
                   ))}
                 </ul>
                 <div className="mt-6 border border-gray-200 rounded-lg bg-gray-50 p-2 flex-1 flex items-center justify-center">
-                  {RiveComponent ? (
+                  {content.image ? (
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={content.image}
+                        alt={content.imageAlt || "Ilustración del board"}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-contain"
+                        priority
+                      />
+                    </div>
+                  ) : RiveComponent ? (
                     <RiveComponent style={{ width: "100%", height: "100%" }} />
                   ) : (
                     <p className="text-xs text-gray-400 text-center">

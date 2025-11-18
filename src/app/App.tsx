@@ -25,19 +25,13 @@ import { createModerationGuardrail } from "@/app/agentConfigs/guardrails";
 
 // Agent configs
 import { allAgentSets, defaultAgentSetKey } from "@/app/agentConfigs";
-import { customerServiceRetailScenario } from "@/app/agentConfigs/customerServiceRetail";
-import { chatSupervisorScenario } from "@/app/agentConfigs/chatSupervisor";
-import { customerServiceRetailCompanyName } from "@/app/agentConfigs/customerServiceRetail";
-import { chatSupervisorCompanyName } from "@/app/agentConfigs/chatSupervisor";
-import { simpleHandoffScenario } from "@/app/agentConfigs/simpleHandoff";
 import { universityTutorScenario, universityTutorInstitutionName } from "@/app/agentConfigs/universityTutor";
+import { universityTutorEvaluationScenario } from "@/app/agentConfigs/universityTutorEvaluation";
 
 // Map used by connect logic for scenarios defined via the SDK.
 const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
-  simpleHandoff: simpleHandoffScenario,
-  customerServiceRetail: customerServiceRetailScenario,
-  chatSupervisor: chatSupervisorScenario,
   universityTutor: universityTutorScenario,
+  universityTutorEvaluation: universityTutorEvaluationScenario,
 };
 
 import useAudioDownload from "./hooks/useAudioDownload";
@@ -269,11 +263,10 @@ function App() {
         }
 
         const companyNameMap: Record<string, string> = {
-          customerServiceRetail: customerServiceRetailCompanyName,
-          chatSupervisor: chatSupervisorCompanyName,
           universityTutor: universityTutorInstitutionName,
+          universityTutorEvaluation: universityTutorInstitutionName,
         };
-        const companyName = companyNameMap[agentSetKey] ?? chatSupervisorCompanyName;
+        const companyName = companyNameMap[agentSetKey] ?? universityTutorInstitutionName;
         const guardrail = createModerationGuardrail(companyName);
 
         await connect({
@@ -658,7 +651,7 @@ function App() {
                   </div>
                 </div>
 
-                {agentSetKey && (
+                {selectedAgentConfigSet && selectedAgentConfigSet.length > 1 && (
                   <div>
                     <label className="block text-sm font-medium text-gray-600 mb-1">
                       Agent

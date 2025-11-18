@@ -1,37 +1,8 @@
-import { RealtimeAgent, tool } from '@openai/agents/realtime';
-import { BoardContentAction } from '@/app/types';
+import { RealtimeAgent } from '@openai/agents/realtime';
+import { boardContentTool } from './boardContentTool';
 
 const lessonTitle = 'Fuentes e instrumentos de financiamiento';
 const subjectName = 'Razonamiento Matemático';
-
-const boardContentTool = tool({
-  name: 'board_content',
-  description: 'Actualiza la información mostrada en el board visible para el estudiante.',
-  parameters: {
-    type: 'object',
-    properties: {
-      content_action: {
-        type: 'string',
-        description: 'Acción a desplegar en el board',
-        enum: ['CLEAN', 'FINANCIAMIENTO', 'INNOVACION', 'FUENTES', 'INSTRUMENTOS'],
-      },
-    },
-    required: ['content_action'],
-    additionalProperties: false,
-  },
-  execute: async (input, details) => {
-    const { content_action } = input as { content_action: BoardContentAction };
-    const handler = (details?.context as any)?.handleBoardContentAction as
-      | ((action: BoardContentAction) => void)
-      | undefined;
-    const addBreadcrumb = (details?.context as any)?.addTranscriptBreadcrumb as
-      | ((title: string, data?: any) => void)
-      | undefined;
-    handler?.(content_action);
-    addBreadcrumb?.('board_content', { content_action });
-    return { ok: true };
-  },
-});
 
 export const universityTutorAgent = new RealtimeAgent({
   name: 'tutorFinanzas',
@@ -59,10 +30,17 @@ Eres un tutor universitario especializado en ${subjectName}. Tu misión es guiar
 - Utiliza expresiones comunes en México (“claro”, “con gusto”, “vale la pena notar”) siempre dentro de un registro académico.
 - Limita las respuestas a la información proporcionada en esta lección. Si el alumno solicita algo fuera de alcance, indícalo con amabilidad y redirígelo al objetivo actual.
 
-# Herramientas
-- Tienes acceso a la herramienta \`board_content\` para actualizar lo que el alumno ve en el board lateral. Usa el parámetro \`content_action\` con alguno de los valores permitidos: CLEAN, FINANCIAMIENTO, INNOVACION, FUENTES o INSTRUMENTOS.
+- # Herramientas
+- Tienes acceso a la herramienta \`board_content\` para actualizar lo que el alumno ve en el board lateral. Usa el parámetro \`content_action\` con alguno de los valores permitidos: CLEAN, FINANCIAMIENTO, INNOVACION, FUENTES, INSTRUMENTOS, HISTORIA_ZAPATERO_1, HISTORIA_ZAPATERO_2 o HISTORIA_ZAPATERO_3.
 - Al iniciar cada sesión, debes llamar inmediatamente a \`board_content\` con \`content_action="CLEAN"\` para limpiar el board antes de comenzar.
 - Usa el board para reforzar ideas clave y organizar notas breves (sin repetir la explicación completa).
+- Si decides contar la historia del zapatero de Guadalajara:
+  - Muestra \`HISTORIA_ZAPATERO_1\` (imagen \`/zapaterog1.webp\`) cuando describas su limitación en producción.
+  - Usa \`HISTORIA_ZAPATERO_2\` (imagen \`/zapaterog2.webp\`) cuando hable del préstamo para comprar maquinaria.
+  - Usa \`HISTORIA_ZAPATERO_3\` (imagen \`/zapaterog3.webp\`) cuando expliques el aumento de producción y pago del crédito.
+
+
+
 
 # Restricciones
 - No inventes datos adicionales ni cites fuentes externas.
