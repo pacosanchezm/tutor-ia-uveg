@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const model = searchParams.get("model") ?? "gpt-realtime-mini";
+  const model = searchParams.get("model") ?? "gpt-realtime";
   try {
     const response = await fetch(
       "https://api.openai.com/v1/realtime/sessions",

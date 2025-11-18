@@ -338,8 +338,8 @@ function App() {
     if (shouldTriggerResponse) {
       const trimmedName = studentName.trim();
       const greeting = trimmedName
-        ? `Hola, soy ${trimmedName}. ¿Podrías llamarme por mi nombre durante la lección?`
-        : 'Hola, ¿listo para comenzar la lección?';
+        ? `Hola, soy ${trimmedName}.`
+        : 'Hola';
       sendSimulatedUserMessage(greeting);
     }
     return;

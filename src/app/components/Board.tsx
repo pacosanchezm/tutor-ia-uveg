@@ -43,6 +43,53 @@ const boardContentMap: Record<BoardContentKey, {
       "La elección depende del costo, plazo y flexibilidad requerida.",
     ],
   },
+
+  FUENTES_1: {
+    title: "Fuentes de financiamiento",
+    bullets: [
+      "Internas: utilidades retenidas, ahorro, aportaciones de socios.",
+      "Externas: créditos bancarios, inversionistas, fondeos gubernamentales.",
+      "La elección depende del costo, plazo y flexibilidad requerida.",
+    ],
+  },
+
+
+  FUENTES_2: {
+    title: "Fuentes de financiamiento",
+    bullets: [
+      "Internas: utilidades retenidas, ahorro, aportaciones de socios.",
+      "Externas: créditos bancarios, inversionistas, fondeos gubernamentales.",
+      "La elección depende del costo, plazo y flexibilidad requerida.",
+    ],
+  },
+
+
+  FUENTES_3: {
+    title: "Fuentes de financiamiento",
+    bullets: [
+      "Internas: utilidades retenidas, ahorro, aportaciones de socios.",
+      "Externas: créditos bancarios, inversionistas, fondeos gubernamentales.",
+      "La elección depende del costo, plazo y flexibilidad requerida.",
+    ],
+  },
+
+
+  FUENTES_4: {
+    title: "Fuentes de financiamiento",
+    bullets: [
+      "Internas: utilidades retenidas, ahorro, aportaciones de socios.",
+      "Externas: créditos bancarios, inversionistas, fondeos gubernamentales.",
+      "La elección depende del costo, plazo y flexibilidad requerida.",
+    ],
+  },
+
+
+
+
+
+
+
+
   INSTRUMENTOS: {
     title: "Instrumentos frecuentes",
     bullets: [
@@ -76,28 +123,28 @@ const boardContentMap: Record<BoardContentKey, {
     imageAlt: "Ilustración del caso de María",
   },
   HISTORIA_ZAPATERO_1: {
-    title: "Historia del zapatero - Etapa 1",
+    title: "Un zapatero de Guadalajara enfrenta una limitación en la producción.",
     bullets: [
-      "El zapatero de Guadalajara enfrenta una limitación en la producción.",
-      "Describe el contexto o problema inicial que detectaste.",
+      "",
+      
     ],
     image: "/zapaterog1.webp",
     imageAlt: "Zapatero de Guadalajara etapa 1",
   },
   HISTORIA_ZAPATERO_2: {
-    title: "Historia del zapatero - Etapa 2",
+    title: "Solicita un préstamo bancario para adquirir maquinaria especializada.",
     bullets: [
-      "Solicita un préstamo bancario para adquirir maquinaria especializada.",
-      "Describe los motivos para elegir ese instrumento y los pasos relevantes.",
+      "",
+      
     ],
     image: "/zapaterog2.webp",
     imageAlt: "Zapatero de Guadalajara etapa 2",
   },
   HISTORIA_ZAPATERO_3: {
-    title: "Historia del zapatero - Etapa 3",
+    title: "Con la nueva maquinaria aumenta su producción y ventas.",
     bullets: [
-      "Con la nueva maquinaria aumenta su producción y ventas.",
-      "Explica cómo planea pagar el crédito y los beneficios obtenidos.",
+      "",
+      
     ],
     image: "/zapaterog3.webp",
     imageAlt: "Zapatero de Guadalajara etapa 3",
@@ -132,6 +179,15 @@ function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
     "INNOVACION",
   );
   const fuentesInput = useStateMachineInput(rive, stateMachineName, "FUENTES");
+
+  const fuentes_1Input = useStateMachineInput(rive, stateMachineName, "FUENTES_1");
+  const fuentes_2Input = useStateMachineInput(rive, stateMachineName, "FUENTES_2");
+  const fuentes_3Input = useStateMachineInput(rive, stateMachineName, "FUENTES_3");
+  const fuentes_4Input = useStateMachineInput(rive, stateMachineName, "FUENTES_4");
+
+
+
+
   const instrumentosInput = useStateMachineInput(
     rive,
     stateMachineName,
@@ -144,6 +200,10 @@ function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
       FINANCIAMIENTO: financiamientoInput,
       INNOVACION: innovacionInput,
       FUENTES: fuentesInput,
+      FUENTES_1: fuentes_1Input,
+      FUENTES_2: fuentes_2Input,
+      FUENTES_3: fuentes_3Input,
+      FUENTES_4: fuentes_4Input,
       INSTRUMENTOS: instrumentosInput,
     };
     const target = inputMap[contentKey];
@@ -165,6 +225,10 @@ function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
     financiamientoInput,
     innovacionInput,
     fuentesInput,
+    fuentes_1Input,
+    fuentes_2Input,
+    fuentes_3Input,
+    fuentes_4Input,
     instrumentosInput,
   ]);
 
