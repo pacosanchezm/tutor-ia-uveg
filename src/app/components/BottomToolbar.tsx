@@ -43,8 +43,17 @@ function BottomToolbar({
     return `bg-black hover:bg-gray-900 ${cursorClass} ${baseClasses}`;
   }
 
+  const preventTextSelection = {
+    userSelect: "none" as const,
+    WebkitUserSelect: "none" as const,
+    WebkitTapHighlightColor: "transparent",
+  };
+
   return (
-    <div className="p-4 flex flex-row items-center justify-center gap-x-8">
+    <div
+      className="p-4 flex flex-row items-center justify-center gap-x-8 select-none"
+      style={preventTextSelection}
+    >
       <button
         onClick={onToggleConnection}
         className={`${getConnectionButtonClasses()} select-none`}
@@ -71,8 +80,14 @@ function BottomToolbar({
         <button
           onMouseDown={handleTalkButtonDown}
           onMouseUp={handleTalkButtonUp}
-          onTouchStart={handleTalkButtonDown}
-          onTouchEnd={handleTalkButtonUp}
+          onTouchStart={(e) => {
+            e.preventDefault();
+            handleTalkButtonDown();
+          }}
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            handleTalkButtonUp();
+          }}
           disabled={!isPTTActive}
           className={
             (isPTTUserSpeaking ? "bg-gray-300" : "bg-gray-200") +
@@ -82,8 +97,7 @@ function BottomToolbar({
               : " py-1 px-4 rounded-md") +
             (!isPTTActive ? " bg-gray-100 text-gray-400" : "")
           }
-          style={{ WebkitTapHighlightColor: "transparent" }}
-          // Avoid accidental text selection on touch devices
+          style={preventTextSelection}
           tabIndex={0}
         >
           Hablar
