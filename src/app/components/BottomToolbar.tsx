@@ -47,7 +47,7 @@ function BottomToolbar({
     <div className="p-4 flex flex-row items-center justify-center gap-x-8">
       <button
         onClick={onToggleConnection}
-        className={getConnectionButtonClasses()}
+        className={`${getConnectionButtonClasses()} select-none`}
         disabled={isConnecting}
       >
         {getConnectionButtonLabel()}
@@ -82,6 +82,9 @@ function BottomToolbar({
               : " py-1 px-4 rounded-md") +
             (!isPTTActive ? " bg-gray-100 text-gray-400" : "")
           }
+          style={{ WebkitTapHighlightColor: "transparent" }}
+          // Avoid accidental text selection on touch devices
+          tabIndex={0}
         >
           Hablar
         </button>
