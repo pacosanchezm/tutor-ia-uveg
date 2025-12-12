@@ -162,4 +162,11 @@ export type BoardContentAction =
   | "EVAL_PREGUNTA_3"
   | "HISTORIA_ZAPATERO_1"
   | "HISTORIA_ZAPATERO_2"
-  | "HISTORIA_ZAPATERO_3";
+  | "HISTORIA_ZAPATERO_3"
+  // Golf tutor actions
+  | "GOLF_INTRO"
+  | "GOLF_EQUIPO"
+  | "GOLF_GRIP"
+  | "GOLF_SWING"
+  | "GOLF_PUTT"
+  | "GOLF_ETIQUETA";

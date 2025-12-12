@@ -27,11 +27,14 @@ import { createModerationGuardrail } from "@/app/agentConfigs/guardrails";
 import { allAgentSets, defaultAgentSetKey } from "@/app/agentConfigs";
 import { universityTutorScenario, universityTutorInstitutionName } from "@/app/agentConfigs/universityTutor";
 import { universityTutorEvaluationScenario } from "@/app/agentConfigs/universityTutorEvaluation";
+import { golfTutorScenario, golfTutorInstitutionName } from "@/app/agentConfigs/golfTutor";
+import { agentBranding } from "@/app/agentConfigs/branding";
 
 // Map used by connect logic for scenarios defined via the SDK.
 const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
   universityTutor: universityTutorScenario,
   universityTutorEvaluation: universityTutorEvaluationScenario,
+  golfTutor: golfTutorScenario,
 };
 
 import useAudioDownload from "./hooks/useAudioDownload";
@@ -266,6 +269,7 @@ function App() {
         const companyNameMap: Record<string, string> = {
           universityTutor: universityTutorInstitutionName,
           universityTutorEvaluation: universityTutorInstitutionName,
+          golfTutor: golfTutorInstitutionName,
         };
         const companyName = companyNameMap[agentSetKey] ?? universityTutorInstitutionName;
         const guardrail = createModerationGuardrail(companyName);
@@ -446,6 +450,18 @@ function App() {
     }
   }, []);
 
+  // Allow passing the student's name via URL param ?cliente=
+  useEffect(() => {
+    const urlName = searchParams.get("cliente");
+    if (!urlName) return;
+    const trimmed = urlName.trim();
+    if (!trimmed) return;
+    setStudentName(trimmed);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("studentName", trimmed);
+    }
+  }, [searchParams]);
+
   useEffect(() => {
     localStorage.setItem("pushToTalkUI", isPTTActive.toString());
   }, [isPTTActive]);
@@ -563,6 +579,14 @@ function App() {
 
   const agentSetKey = searchParams.get("agentConfig") || "default";
 
+  const brandKey = agentSetKey;
+  const { title: brandTitle, logoSrc, logoAlt } =
+    agentBranding[brandKey] ?? {
+      title: "Tutor-ia",
+      logoSrc: "/tutor-ia-uveg-logo.jpg",
+      logoAlt: "Tutor-ia",
+    };
+
   return (
     <div className="text-base flex flex-col h-screen bg-gray-100 text-gray-800 relative">
       <div className="p-5 text-lg font-semibold flex justify-between items-center">
@@ -572,14 +596,14 @@ function App() {
         >
           <div className="flex items-center">
             <Image
-              src="/tutor-ia-uveg-logo.jpg"
-              alt="Tutor-IA UVEG"
+              src={logoSrc}
+              alt={logoAlt || brandTitle}
               width={160}
               height={160}
               className="object-contain max-w-[160px] mix-blend-multiply"
             />
           </div>
-          <div className="text-3xl font-semibold text-gray-900">Tutor-ia</div>
+          <div className="text-3xl font-semibold text-gray-900">{brandTitle}</div>
         </div>
         <div className="flex items-center gap-4 flex-wrap justify-end">
           <div className="relative" ref={profileMenuRef}>

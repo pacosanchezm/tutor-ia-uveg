@@ -149,6 +149,66 @@ const boardContentMap: Record<BoardContentKey, {
     image: "/zapaterog3.webp",
     imageAlt: "Zapatero de Guadalajara etapa 3",
   },
+  GOLF_INTRO: {
+    title: "Bienvenida al Golf",
+    bullets: [
+      "Objetivo: aprender fundamentos, seguridad y etiqueta.",
+      "Calienta antes de golpear y conoce tu entorno.",
+      "Haremos preguntas cortas para confirmar cada paso.",
+    ],
+    image: "/golf_intro_web.png",
+    imageAlt: "Ilustración introductoria de golf",
+  },
+  GOLF_EQUIPO: {
+    title: "Equipo esencial",
+    bullets: [
+      "Palo para salida (driver o madera), hierros básicos y un putter.",
+      "Guantes para mejor agarre y tees para el golpe inicial.",
+      "Calzado cómodo con buen agarre; lleva pelotas y marcadores.",
+    ],
+    image: "/golf_equipo_web.png",
+    imageAlt: "Equipo básico de golf",
+  },
+  GOLF_GRIP: {
+    title: "Grip y postura",
+    bullets: [
+      "Agarre relajado: presión firme pero sin tensar muñecas.",
+      "Manos juntas; muñecas alineadas; caderas y hombros paralelos al objetivo.",
+      "Peso repartido: estable pero suelto para girar.",
+    ],
+    image: "/golf_grip_web.png",
+    imageAlt: "Agarre y postura en golf",
+  },
+  GOLF_SWING: {
+    title: "Swing inicial",
+    bullets: [
+      "Backswing controlado: rota hombros, mantiene cabeza estable.",
+      "Impacto: mira la bola y deja que el palo acelere al final.",
+      "Follow-through equilibrado; evita forzar, busca fluidez.",
+    ],
+    image: "/golf_swing_web.png",
+    imageAlt: "Secuencia básica de swing",
+  },
+  GOLF_PUTT: {
+    title: "Putt básico",
+    bullets: [
+      "Postura estable, ojos sobre la bola, movimiento tipo péndulo.",
+      "Controla distancia con amplitud del movimiento, no con fuerza brusca.",
+      "Lee la caída: observa pendientes antes de alinearte.",
+    ],
+    image: "/golf_putt_web.png",
+    imageAlt: "Ejecución de un putt",
+  },
+  GOLF_ETIQUETA: {
+    title: "Etiqueta y seguridad",
+    bullets: [
+      "Respeta turnos y permanece en silencio cuando otro golpea.",
+      "Revisa que nadie esté en la línea de tiro; grita “¡fore!” ante riesgo.",
+      "Repara divots y marcas en green; cuida el ritmo de juego.",
+    ],
+    image: "/golf_etiqueta_web.png",
+    imageAlt: "Buenas prácticas y seguridad en golf",
+  },
 };
 
 function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
