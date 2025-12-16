@@ -18,6 +18,7 @@ const boardContentMap: Record<BoardContentKey, {
   bullets: string[];
   image?: string;
   imageAlt?: string;
+  button?: { label: string; href: string };
 }> = {
   FINANCIAMIENTO: {
     title: "Rol estratégico del financiamiento",
@@ -209,6 +210,17 @@ const boardContentMap: Record<BoardContentKey, {
     image: "/golf_etiqueta_web.png",
     imageAlt: "Buenas prácticas y seguridad en golf",
   },
+  GOLF_SPONSOR: {
+    title: "Recomendación de bastones: Callaway",
+    bullets: [
+      "Marca de prestigio, confianza y calidad para equipamiento de golf.",
+      "Opción sugerida cuando se piden recomendaciones de palos.",
+      "Consulta la línea disponible y elige según tu nivel y necesidad.",
+    ],
+    image: "https://images.contentstack.io/v3/assets/bltf7bc8e0c7e024392/blte666cfcba21d1030/67607e9c197eca0642ce1af9/Elyte-Intro-Secondary-2000x2000.jpg?auto=webp&width=3000&quality=75",
+    imageAlt: "Bastones Callaway",
+    button: { label: "Comprar", href: "https://www.callawaygolf.com/" },
+  },
 };
 
 function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
@@ -310,24 +322,44 @@ function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-                <div className="mt-6 border border-gray-200 rounded-lg bg-gray-50 p-2 flex-1 flex items-center justify-center">
+                <div className="mt-6 border border-gray-200 rounded-lg bg-gray-50 p-2 flex-1 flex flex-col items-center justify-center gap-3">
                   {content.image ? (
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={content.image}
-                        alt={content.imageAlt || "Ilustración del board"}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-contain"
-                        priority
-                      />
-                    </div>
+                    content.image.startsWith("http") ? (
+                      <div className="relative w-full h-full flex items-center justify-center">
+                        <img
+                          src={content.image}
+                          alt={content.imageAlt || "Ilustración del board"}
+                          className="max-h-72 w-full object-contain rounded-md"
+                        />
+                      </div>
+                    ) : (
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={content.image}
+                          alt={content.imageAlt || "Ilustración del board"}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-contain"
+                          priority
+                        />
+                      </div>
+                    )
                   ) : RiveComponent ? (
                     <RiveComponent style={{ width: "100%", height: "100%" }} />
                   ) : (
                     <p className="text-xs text-gray-400 text-center">
                       Cargando animación…
                     </p>
+                  )}
+                  {content.button && (
+                    <a
+                      href={content.button.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                    >
+                      {content.button.label}
+                    </a>
                   )}
                 </div>
               </>

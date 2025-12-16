@@ -32,6 +32,7 @@ export const boardContentTool = tool({
           'GOLF_SWING',
           'GOLF_PUTT',
           'GOLF_ETIQUETA',
+          'GOLF_SPONSOR',
         ],
       },
     },

@@ -169,4 +169,5 @@ export type BoardContentAction =
   | "GOLF_GRIP"
   | "GOLF_SWING"
   | "GOLF_PUTT"
-  | "GOLF_ETIQUETA";
+  | "GOLF_ETIQUETA"
+  | "GOLF_SPONSOR";

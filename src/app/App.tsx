@@ -273,12 +273,13 @@ function App() {
         };
         const companyName = companyNameMap[agentSetKey] ?? universityTutorInstitutionName;
         const guardrail = createModerationGuardrail(companyName);
+        const enableGuardrail = agentSetKey !== "golfTutor";
 
         await connect({
           getEphemeralKey: async () => EPHEMERAL_KEY,
           initialAgents: reorderedAgents,
           audioElement: sdkAudioElement,
-          outputGuardrails: [guardrail],
+          outputGuardrails: enableGuardrail ? [guardrail] : [],
           extraContext: {
             addTranscriptBreadcrumb,
             handleBoardContentAction,
