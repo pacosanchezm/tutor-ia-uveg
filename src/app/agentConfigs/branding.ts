@@ -7,13 +7,13 @@ export interface AgentBranding {
 export const agentBranding: Record<string, AgentBranding> = {
   universityTutor: {
     title: "Tutor-ia",
-    logoSrc: "/tutor-ia-uveg-logo.jpg",
-    logoAlt: "Tutor-ia",
+    logoSrc: "",
+    logoAlt: "",
   },
   universityTutorEvaluation: {
     title: "Tutor-ia Evaluación",
-    logoSrc: "/tutor-ia-uveg-logo.jpg",
-    logoAlt: "Tutor-ia Evaluación",
+    logoSrc: "",
+    logoAlt: "",
   },
   golfTutor: {
     title: "Golf Tutor",

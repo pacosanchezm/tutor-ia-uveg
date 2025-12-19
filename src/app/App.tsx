@@ -596,13 +596,15 @@ function App() {
           onClick={() => window.location.reload()}
         >
           <div className="flex items-center">
-            <Image
-              src={logoSrc}
-              alt={logoAlt || brandTitle}
-              width={160}
-              height={160}
-              className="object-contain max-w-[160px] mix-blend-multiply"
-            />
+            {logoSrc ? (
+              <Image
+                src={logoSrc}
+                alt={logoAlt || brandTitle}
+                width={160}
+                height={160}
+                className="object-contain max-w-[160px] mix-blend-multiply"
+              />
+            ) : null}
           </div>
           <div className="text-3xl font-semibold text-gray-900">{brandTitle}</div>
         </div>
