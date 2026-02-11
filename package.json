@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:golf-defs": "node scripts/buildGolfDefinitions.mjs"
   },
   "dependencies": {
     "@openai/agents": "^0.0.5",

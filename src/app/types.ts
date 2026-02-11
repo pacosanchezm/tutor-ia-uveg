@@ -170,4 +170,10 @@ export type BoardContentAction =
   | "GOLF_SWING"
   | "GOLF_PUTT"
   | "GOLF_ETIQUETA"
-  | "GOLF_SPONSOR";
+  | "GOLF_SPONSOR"
+  | "GOLF_FLASHCARD";
+
+export interface BoardFlashcardPayload {
+  flashcard_question?: string;
+  flashcard_answer?: string;
+}

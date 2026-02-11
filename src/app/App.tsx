@@ -14,7 +14,7 @@ import Board from "./components/Board";
 import BottomToolbar from "./components/BottomToolbar";
 
 // Types
-import { SessionStatus, BoardContentAction } from "@/app/types";
+import { SessionStatus, BoardContentAction, BoardFlashcardPayload } from "@/app/types";
 import type { RealtimeAgent } from '@openai/agents/realtime';
 
 // Context providers & hooks
@@ -28,6 +28,7 @@ import { allAgentSets, defaultAgentSetKey } from "@/app/agentConfigs";
 import { universityTutorScenario, universityTutorInstitutionName } from "@/app/agentConfigs/universityTutor";
 import { universityTutorEvaluationScenario } from "@/app/agentConfigs/universityTutorEvaluation";
 import { golfTutorScenario, golfTutorInstitutionName } from "@/app/agentConfigs/golfTutor";
+import { golfTutorDefsScenario, golfTutorDefsInstitutionName } from "@/app/agentConfigs/golfTutorDefs";
 import { agentBranding } from "@/app/agentConfigs/branding";
 
 // Map used by connect logic for scenarios defined via the SDK.
@@ -35,6 +36,7 @@ const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
   universityTutor: universityTutorScenario,
   universityTutorEvaluation: universityTutorEvaluationScenario,
   golfTutor: golfTutorScenario,
+  golfTutorDefs: golfTutorDefsScenario,
 };
 
 import useAudioDownload from "./hooks/useAudioDownload";
@@ -128,6 +130,10 @@ function App() {
   const profileMenuRef = useRef<HTMLDivElement | null>(null);
   const [boardContentKey, setBoardContentKey] =
     useState<BoardContentAction>("CLEAN");
+  const [boardFlashcardQuestion, setBoardFlashcardQuestion] =
+    useState<string>("");
+  const [boardFlashcardAnswer, setBoardFlashcardAnswer] =
+    useState<string>("");
   const [selectedRealtimeModel, setSelectedRealtimeModel] = useState<string>(
     () => {
       if (typeof window === "undefined") return "gpt-realtime-mini";
@@ -140,9 +146,20 @@ function App() {
   });
   const prevAgentNameRef = useRef<string | null>(null);
   const handleBoardContentAction = useCallback(
-    (action: BoardContentAction) => {
+    (action: BoardContentAction, payload?: BoardFlashcardPayload) => {
       setBoardContentKey(action);
-      addTranscriptBreadcrumb("Board", { action });
+      if (action === "GOLF_FLASHCARD") {
+        setBoardFlashcardQuestion(payload?.flashcard_question?.trim() ?? "");
+        setBoardFlashcardAnswer(payload?.flashcard_answer?.trim() ?? "");
+      } else {
+        setBoardFlashcardQuestion("");
+        setBoardFlashcardAnswer("");
+      }
+      addTranscriptBreadcrumb("Board", {
+        action,
+        flashcard_question: payload?.flashcard_question,
+        flashcard_answer: payload?.flashcard_answer,
+      });
     },
     [addTranscriptBreadcrumb],
   );
@@ -205,6 +222,8 @@ function App() {
     if (prevAgentNameRef.current === selectedAgentName) return;
     prevAgentNameRef.current = selectedAgentName;
     setBoardContentKey("CLEAN");
+    setBoardFlashcardQuestion("");
+    setBoardFlashcardAnswer("");
     addTranscriptBreadcrumb("Board", { action: "CLEAN", reason: "agent_change" });
   }, [selectedAgentName, addTranscriptBreadcrumb]);
 
@@ -270,10 +289,12 @@ function App() {
           universityTutor: universityTutorInstitutionName,
           universityTutorEvaluation: universityTutorInstitutionName,
           golfTutor: golfTutorInstitutionName,
+          golfTutorDefs: golfTutorDefsInstitutionName,
         };
         const companyName = companyNameMap[agentSetKey] ?? universityTutorInstitutionName;
         const guardrail = createModerationGuardrail(companyName);
-        const enableGuardrail = agentSetKey !== "golfTutor";
+        const enableGuardrail =
+          agentSetKey !== "golfTutor" && agentSetKey !== "golfTutorDefs";
 
         await connect({
           getEphemeralKey: async () => EPHEMERAL_KEY,
@@ -827,6 +848,8 @@ function App() {
               isTranscriptVisible ? "w-1/2 overflow-auto" : "w-full overflow-auto"
             }
             contentKey={boardContentKey}
+            flashcardQuestion={boardFlashcardQuestion}
+            flashcardAnswer={boardFlashcardAnswer}
           />
         )}
       </div>

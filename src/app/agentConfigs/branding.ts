@@ -20,4 +20,9 @@ export const agentBranding: Record<string, AgentBranding> = {
     logoSrc: "/tarcys3.webp",
     logoAlt: "Golf Tutor",
   },
+  golfTutorDefs: {
+    title: "Golf Tutor Defs",
+    logoSrc: "/tarcys3.webp",
+    logoAlt: "Golf Tutor Defs",
+  },
 };

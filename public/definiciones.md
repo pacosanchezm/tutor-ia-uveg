@@ -1,0 +1,475 @@
+## Definiciones
+
+349Definiciones
+
+## Agua Temporal
+
+Cualquier  acumulación  temporal  de agua  en la superficie  del terreno (como charcos  de agua  de lluvia  o riego  o el desborde  de un cauce  de agua)  que: •No está  en un área  de penalidad, y •Puede  ser vista  antes  o después  de que el jugador  tome  su stance  (sin presionar excesivamente  con sus pies). No es suficiente  que el terreno  este  simplemente  húmedo,  fangoso  o blando,  o que el agua  sea momentáneamente  visible  cuando  el jugador pise el terreno;  una acumulación  de agua  debe  permanecer  visible  antes  o después  de que el jugador  tome  su stance.
+
+## Casos  especiales:
+
+•El Rocío  y la Escarcha  no son agua  temporal. •La Nieve  y el Hielo  Natural  (que  no sea escarcha),  son impedimentos  suelto s o, cuando  estén  en el terreno,  agua  temporal , a elección  del jugador. •El Hielo  Fabricado  es una obstrucción.
+
+## Agujero de Animal
+
+Cualquier  agujero  en el terreno  hecho  por un animal,  excepto  los hechos por animales  que también  son definidos como  impedimentos sueltos (tales  como  gusanos  o insectos). El término  agujero  de animal  incluye: •El material suelto  que el animal  ha extraído del agujero, •Cualquier  camino  o sendero  notorio  que conduce  al agujero,  y •Cualquier  área en el terreno  levantada  o alterada como  resultado  de la excavación  del animal  al hacer  el agujero. Un agujero  de animal  no incluye  huellas  de animal  que no son parte  de un camino  o sendero  notorio  que conduce  a un agujero  de animal . 350Definiciones
+
+## Animal
+
+Cualquier  ser vivo del reino  animal  (diferente  al ser humano),  incluyendo mamíferos,  pájaros,  reptiles,  anfibios  e invertebrados  (tales  como gusanos,  insectos,  arañas, y crustáceos).
+
+## Anotador
+
+En stroke play , la persona responsable  de registrar el  score de un jugador en su tarjeta  de score y de certificar la misma.  El anotador puede ser otro jugador , pero  no un compañero . El Comité  puede  seleccionar  quien  será el anotador  del jugador  o indicar a los jugadores  cómo  pueden  elegir  un anotador .
+
+## Árbitro
+
+Un oficial designado  por el  Comité para decidir sobre  cuestiones de hecho y aplicar  las Reglas. En match  play, la responsabilidad  y la autoridad  de un árbitro  dependen de la función  que le asignaron: •Cuando  un árbitro  es asignado  a un match  para  toda  la ronda, es responsable  de actuar  ante  cualquier  infracción  a las Reglas  que vea o se le informe  (ver Regla  20.1b(1)). •Cuando  un árbitro  es asignado  a múltiples  matches  o a ciertos  hoyos  o sectores  del campo , no tiene  autoridad  para  involucrarse  en un match, salvo  que: –Un jugador  en un match  pida  ayuda  con las Reglas  o solicite una decisión  (ver Regla  20.1b(2)). –Un jugador  o jugadores  en un match  puedan  estar  infringiendo la Regla  1.2 (Estándares  de Conducta  del Jugador),  la Regla 1.3b(1)  (Dos  o Más Jugadores  Acuerdan  Ignorar  cualquier  Regla o Penalidad  que Saben  se Aplica),  la Regla  5.6a  (Demora Irrazonable  en el Juego)  o la Regla  5.6b  (Ritmo  de Juego Rápido). –Un jugador  llegue  tarde  a su primera  área  de salida  (ver
+
+## Regla 5.3),  o
+
+–La búsqueda  de bola  de un jugador  llegue  a tres minutos  (ver Regla  5.6a  y definición  de “bola  perdida” ). En stroke play , un árbitro es responsable  de actuar ante  cualquier infracción  a las Reglas  que observe  o le sea informada.  Esto  aplica  si el árbitro  ha sido asignado  a un grupo  para  toda  la ronda , o para  monitorear múltiples  grupos,  ciertos hoyos  o partes  del campo . 351Definiciones Las responsabilidades  de un árbitro  pueden  ser limitadas  por el Comité  en match  play y en stroke play .
+
+## Área de Alivio
+
+El área  donde  un jugador  debe  dropear  una bola  al tomar  alivio  bajo  una Regla.  Con excepción del  alivio  en línea  hacia  atrás (ver Reglas 16.1c(2), 17.1d(2),  19.2b  y 19.3)  cada  Regla  de alivio  requiere  al jugador  el uso de un área  de alivio  específica,  cuyo  tamaño  y ubicación  se basa  en estos  tres factores: •Punto  de Referencia : El punto  desde  el cual el tamaño del área  de alivio  es medida. •Tamaño del Área  de Alivio  Medido  desde  el Punto  de Referencia : El área de alivio  es de uno o dos palos  de longitud  desde  el punto  de referencia,  pero  con ciertas  limitaciones. •Limitaciones  sobre  la Ubicación  del Área  de Alivio : La ubicación  del área  de alivio  puede  estar  limitada  de una o más maneras,  de modo que,  por ejemplo : » Está  solamente  en ciertas  áreas  definidas  del campo , tal como en el área general  solamente,  o no estar en un bunker  o en un área de penalidad, » No está  más cerca  del hoyo  que el punto  de referencia  o debe  estar fuera  de un área  de penalidad o un bunker, desde  los cuales  se está tomando  alivio,  o » Está donde no hay interferencia (como se define en la Regla específica) de la condición  de la que se  está tomando  alivio. En el alivio  en línea  hacia  atrás,  el jugador  debe  dropear  en la línea  en un lugar  permitido  por la Regla  que se está  aplicando, y el punto  donde  la bola  toca  el suelo  cuando  es dropeada crea  un área  de alivio  de la longitud de un palo  en cualquier  dirección  desde  ese punto. Cuando  a un jugador se  le requiere dropear  nuevamente  o por segunda vez usando  el alivio  en línea  hacia  atrás,  puede: •Cambiar  el punto  donde  la bola  es dropeada  (como  dropeando  más cerca  o más lejos del hoyo ) y el  área  de alivio  cambia  en base  a ese punto,  y •Dropear  en un área  del campo diferente. Pero  el hacerlo  no cambia  como  se aplica  la Regla  14.3c. Al usar  la longitud  del palo  para  determinar  el tamaño  del área  de alivio , el jugador  puede  medir  directamente  a través  de una zanja,  agujero  o cosa 352Definiciones similar, y directamente  a través  de un objeto  (como  un árbol,  cerco, pared,  túnel,  desagüe  o boca  de riego),  pero  no está  permitido  medir  a través  del suelo  que se ondula  naturalmente  o inclina  hacia  arriba  y hacia abajo. Ver Procedimientos  del Comité,  Sección  2I (El Comité  puede  elegir  el permitir  o requerir  que el jugador  use una zona  de dropeo  como  área  de alivio  cuando  toma  un determinado  alivio) . Área  de Alivio/1  – Determinando  Si la Bola  Está  en el Área de Alivio Generalmente,  una bola  ha ido a reposar  dentro  de un área  de alivio , si cualquier  parte  de la misma  está dentro  de la medida  de uno o dos palos  de longitud . Pero,  cuando  se toma  alivio  bajo  una Regla  que tiene un punto  de referencia  (como  cuando  se toma  alivio  de una obstrucción  inamovible ) una bola  no está en el área de alivio  si cualquier  parte  de la bola está más cerca  del hoyo  que el punto  de referencia. Cuando  se está tomando  alivio  en línea  hacia  atrás  o si se está usando  una zona  de dropeo  como  área de alivio , como  no hay punto  de referencia, una bola  está en el área  de alivio  cuando  cualquier  parte  de la bola  toca  o sobrecuelga  el área  de alivio . Esto  es así, aunque  parte  de la bola  esté más cerca  del hoyo  que el margen  frontal  del área de alivio . (Nueva)
+
+## Área de Penalidad
+
+Un área  desde  la cual,  si la bola  va a reposar  en ella, el alivio  con un golpe de penalidad está  permitido .
+
+## Un área  de penalidad  es:
+
+•Cualquier cuerpo  de agua  en el  campo  (marcada o  no por  el Comité ), incluyendo  un mar, lago,  estanque,  río, zanja,  zanja de drenaje superficial  u otra corriente  abierta  de agua  (contenga  agua  o no), y •Cualquier otra parte del campo  definida  por el Comité  como área  de penalidad. Un área  de penalidad es una de las cinco  áreas  definidas del campo . Hay dos tipos  diferentes de áreas  de penalidad,  distinguidos por  el color  usado  para  marcarlas: •Las áreas  de penalidad  amarillas  (marcadas  con estacas  o líneas amarillas) proporcionan  al jugador dos  opciones  de alivio  (Reglas 17.1d  ( 1) y (2)). •Las áreas  de penalidad  rojas  (marcadas  con estacas  o líneas  rojas) 353Definiciones proporcionan  al jugador  una opción  extra  de alivio  lateral  (Regla 17.1d(3)),  además  de las dos opciones  de alivio  disponibles  para  las áreas  de penalidad amarillas. Si el color  de un área  de penalidad no ha sido marcado  o indicado  por el Comité , se considera un área  de penalidad roja. El margen  de un área  de penalidad se extiende  verticalmente  hacia arriba  y hacia  abajo  del terreno: •Esto  significa  que todo  el terreno  y cualquier  otra  cosa  (como cualquier objeto  natural  o artificial)  dentro  del margen  es parte del área  de penalidad,  ya sea que esté  sobre,  encima  o debajo  de la superficie  del terreno. •Si un  objeto  está dentro  y fuera del  margen  (como un  puente  sobre el área  de penalidad o un árbol  enraizado  dentro  del margen con ramas que se extienden  fuera  del margen  o viceversa), solo  la parte  del objeto  que está  dentro  del margen  es parte  del área de penalidad. El margen  de un área  de penalidad  debería  ser definido  con estacas, líneas  o elementos  físicos : •Estacas : Cuando  está definido  por estacas,  el margen  está definido  por la línea  entre  los puntos  exteriores  de las estacas  al nivel  del suelo  y las estacas  están  dentro  del área  de penalidad . •Líneas : Cuando  está  definido  por una línea  pintada  en el suelo,  el margen  está  definido  por su borde  exterior, y la línea  en sí está  en el área  de penalidad. •Elementos Físicos : Cuando está definido por elementos  físicos (como una playa  o área  desértica  o muro  de contención),  el Comité  debería determinar  cómo  se define  el margen  del área de penalidad. Cuando  el margen del área  de penalidad está  definido  por líneas  o elementos  físicos,  se pueden utilizar  estacas  para  identificar  donde  está localizada el área de penalidad. Cuando  se usan  estacas  para  definir  o identificar  el margen  de un área  de penalidad,  éstas  son obstrucciones. Si un Comité , al definir  erróneamente  los márgenes  de un área  de penalidad,  ha excluido  un área  de agua  que es claramente  parte del área  de penalidad  (por  ejemplo,  colocando  estacas  en una ubicación  tal que hace  que una porción  de agua  que es parte  del área  de penalidad  parece  estar  en el área  general ), esa área  es parte  del área  de penalidad .
+
+## Definiciones
+
+Cuando  el margen de un cauce  de agua no está  definido  por el Comité , el margen de esa área  de penalidad se define  por sus márgenes naturales (es decir,  donde  el suelo  se inclina  hacia  abajo  para  formar  la depresión que puede  contener  el agua). Si un cauce  abierto  de agua  normalmente no contiene  agua (como una zanja  de drenaje  o un área  de circulación  de agua  que está  seca, excepto  durante  una estación lluviosa),  el Comité puede definir  esa área  como  parte  del área  general  (lo que significa  que no es un área  de penalidad) .
+
+## Área de Salida
+
+El área  desde  la que el jugador  debe  jugar  al comenzar  el hoyo  que va a jugar. El área  de salida  es un rectángulo  con una longitud  de dos palos  de profundidad , donde: •Su margen  frontal  está definido por  la línea  determinada  por los bordes delanteros  de dos marcas de  salida  colocadas  por el Comité,  y •Los márgenes  laterales  están  determinados  por los bordes  exteriores de las marcas  de salida. El área  de salida  es una de las cinco  áreas  definidas  del campo . Todos  los otros  lugares  de salida en el campo  (estén  en el mismo  hoyo  o en cualquier  otro  hoyo)  son parte  del área  general.
+
+## Área General
+
+El área  del campo  que cubre  todo  el campo  excepto  las otras  cuatro áreas  definidas:  ( 1) el área  de salida desde  la que el jugador  debe  jugar para  iniciar  el juego  del hoyo  que está  jugando,  ( 2) todas  las áreas de penalidad,  ( 3) todos  los bunkers,  y ( 4) el green  del hoyo  que el jugador  está  jugando.
+
+## El área  general  incluye:
+
+•Todos  los lugares  de salida  del campo  que no sean  el área  de salida,  y •Todos  los greenes  equivocados.
+
+## Áreas del Campo
+
+Las cinco  áreas  definidas  que constituyen  el campo  son: •El área  general, •El área  de salida,  desde  la que el jugador  debe  jugar  al comenzar  el hoyo  que está  jugando, 355Definiciones •Todas  las áreas de penalidad, •Todos  los bunkers,  y •El green  del hoyo  que el jugador  está  jugando.
+
+## Astabandera
+
+Un indicador  recto  movible,  proporcionado  por el Comité,  que está colocado  en el hoyo  para  indicar  a los jugadores  su ubicación.  El astabandera  incluye  la bandera y cualquier  otro  material  u objeto  unido  al indicador. Cuando  un objeto  artificial  o natural,  como  un palo  de golf o una vara , está  siendo  usado  para  indicar  la posición  del hoyo , ese objeto  es tratado como  si fuera  el astabandera  a efectos  de aplicar  las Reglas. Los requisitos  del astabandera  están  contenidos  en las Reglas de Equipo.
+
+## Bando
+
+Dos o más compañeros  que compiten  como  una sola unidad  en una ronda en match play o stroke play . Cada  grupo  de compañeros  es un bando , donde  cada  compañero  juega su propia  bola  (Four -Ball)  o los compañeros  juegan  una sola bola (Foursomes ). Un Bando  no es lo mismo  que un equipo.  En una competencia  por equipos,  cada  equipo  está  compuesto  por jugadores  que compiten individualmente  o como  bandos .
+
+## Bola En Juego
+
+El estatus  de la bola  de un jugador  cuando  reposa  en el campo  y se está utilizando  en el juego  de un hoyo: •Una bola  se convierte  inicialmente  en bola  en juego  en un hoyo: » Cuando  el jugador  ejecuta  un golpe  con ella desde  dentro  del área de salida,  o » En match  play, cuando  el jugador  ejecuta  un golpe  con ella desde fuera  del área  de salida  y el oponente  no cancela  el golpe  bajo  la Regla  6.1b. •Dicha  bola  permanece  en juego  hasta  que sea embocada , excepto  que deja  de estar  en juego : » Cuando es levantada  del campo, 356Definiciones » Cuando  está  perdida  (incluso  si está  en reposo  en el campo ) o va a reposar  fuera  de límites,  o » Cuando  otra  bola  la ha sustituido , incluso  cuando  no está  permitido por una Regla. Una bola  que no está  en juego  es una bola  equivocada. El jugador  no puede  tener  más de una bola  en juego  en ningún  momento. (Ver  Regla  6.3d  para  los limitados  casos  en los que un jugador  puede  jugar más de una bola  al mismo  tiempo  en un hoyo). Cuando  las Reglas  hacen  referencia  a una bola  en reposo  o en movimiento,  se refieren  a la bola  en juego. Cuando  un marcador  de bola  está  colocado  para  marcar  la posición  de una bola  en juego : •Si la bola  no ha sido levantada  está  aún en juego,  y Si la bola  ha sido levantada  y recolocada , está  en juego, aunque  no se haya  retirado  el marcador  de bola.
+
+## Bola Equivocada
+
+
+
+## Cualquier  bola  que no sea:
+
+•La bola  en juego  del jugador (sea la original  o una bola  sustituta ), •Una bola  provisional del jugador,  (antes de  ser abandonada  bajo  la
+
+## Regla  18.3c), o
+
+•Una segunda  bola del jugador  en stroke play  jugada  bajo  las Reglas 14.7b  o 20.1c.
+
+## Ejemplos  de bola  equivocada  son:
+
+•La bola  en juego  de otro  jugador. •Una bola  abandonada. •La bola  del propio  jugador  que está  fuera  de límites,  está  perdida  o que ha sido levantada  y que no se ha vuelto  a poner  en juego. Bola  Equivocada/1  – Parte  de una Bola  Equivocada  sigue siendo  una Bola  Equivocada Si un jugador  ejecuta  un golpe  a parte  de una bola  abandonada que por error  creyó  que era la bola  en juego,  ha ejecutado  un golpe  a una bola equivocada  y se aplica  la Regla  6.3c.
+
+## Definiciones
+
+
+
+## Bola Movida
+
+Cuando  una bola  en reposo  ha dejado  su posición  original  y va a reposar  a cualquier  otro  punto,  y esto  puede  ser observado  a simple  vista  (tanto  si alguien  realmente  la ha visto  moverse  como  si no). Esto  se aplica  cuando  la bola  se ha desplazado  hacia  arriba,  hacia  abajo  u horizontalmente,  en cualquier dirección fuera de  su posición original. •Si la bola  solo se tambalea  (a veces  se denomina  oscilación)  y permanece  o regresa  a su posición  original,  la bola  no se ha movido . Bola  Movida/1  – Cuándo  una Bola  Reposando  sobre  un
+
+## Objeto  Se ha Movido
+
+Con el propósito  de decidir  si una bola  debe  ser recolocada  o si el jugador es penalizado,  una bola  es tratada  como  habiéndose  movido  sólo si se ha movido  con relación  a una parte  específica  de una condición  u objeto  más grande  sobre  el que reposa,  salvo  que todo  el objeto  donde  la bola  reposa se haya movido  con relación  al suelo. Ejemplos  de cuándo  una bola  no se ha movido , incluyen  cuando : •Una bola  está  reposando  en la horquilla  de la rama  de un árbol  y la rama  se mueve,  pero  la posición  de la bola  en la rama  no cambia . Ejemplos  de cuándo  la bola  se ha movido , incluyen  cuando : •Una bola  está  reposando  en un vaso  de plástico  inmóvil,  y el vaso  se mueve  con relación  al terreno  porque  está  siendo  arrastrado  por el viento . •Una bola  está reposando en o sobre  un carrito  motorizado estacionado que comienza  a moverse. Bola  Movida/2  – Evidencia  Televisiva  Muestra  que una Bola  en Reposo  Cambió  de Posición  pero  una Distancia No Razonablemente  Apreciable  a Simple  Vista Al determinar  si una bola  en reposo  se ha movido  o no, el jugador debe  hacer  ese discernimiento  basado  en toda  la información  que razonablemente  tenga  disponible  en ese momento, de tal forma  que pueda decidir  si la bola  debe  ser recolocada  bajo  las Reglas.  Cuando  la bola  del jugador  ha dejado su posición  original  y va a reposar  en otro  lugar  una distancia  que en ese momento  no es razonable  apreciar  a simple  vista,  la determinación  del jugador  de que la bola  no se ha movido  se considerará concluyente,  aún si luego  se ve, a través  del uso de tecnología  sofisticada, que fue incorrecta. 358Definiciones De otra  forma,  si el Comité  determina,  basado  en toda  la evidencia disponible,  que la bola  cambió  su posición  una distancia  que en ese momento  era razonable  apreciar  a simple  vista,  se determinará  que la bola se ha movido  aunque nadie realmente  la haya visto  moverse .
+
+## Bola Perdida
+
+El estatus  de una bola  que no es encontrada dentro  de los tres minutos después  de que el jugador  o su caddie  (o su compañero  o caddie  del compañero ) comienza a buscarla. Una  bola no se convierte  en bola perdida  porque  el jugador  la declare  perdida. Si un jugador  demora  deliberadamente el inicio  de la búsqueda para permitir  que otras  personas  la busquen  en su nombre,  el tiempo  de búsqueda  se inicia  cuando  el jugador  hubiera  estado  en condiciones  de buscarla  si no se hubiera  demorado  en llegar  al área. Si la búsqueda  comienza  y después  se interrumpe  temporalmente por una buena  razón  (como cuando  el jugador  deja  de buscar porque  se suspende el juego,  o necesita hacerse a un lado para  esperar  que otro  jugador juegue)  o si el jugador  ha identificado  erróneamente  una bola  equivocada : •El tiempo  entre  la interrupción  y la reanudación de la búsqueda no cuenta,  y •El tiempo  permitido  para  la búsqueda  es de tres minutos  en total, contando  el tiempo  de búsqueda,  tanto  antes  de la interrupción  como después  de la reanudación  de la búsqueda. Bola  Perdida/1  – El Tiempo  de Búsqueda  Continúa Cuándo  el Jugador  Vuelve  para  Jugar  una Bola
+
+## Provisional
+
+Si un jugador  ha comenzado  la búsqueda  de su bola  y está regresando  al lugar  del golpe anterior  para  jugar una bola provisional , el tiempo  de tres minutos  de búsqueda  continúa  ya sea o no que alguien continúe  buscando la bola  del jugador. Bola  Perdida/2  – Tiempo  de Búsqueda  Cuando  se Buscan
+
+## Dos  Bolas
+
+Cuando  un jugador  ha jugado  dos bolas  (como  la bola en juego  y una bola provisional ) y está buscando  ambas, si el jugador  tiene  permitido  tener dos períodos  separados  de tres minutos  depende  de las circunstancias  en cada  situación. 359Definiciones Si las bolas  están  en la  misma  zona  donde  pueden  ser buscadas  al mismo tiempo,  el jugador  tiene permitidos  solamente  tres minutos  para  encontrar las dos bolas. Pero,  si lo más probable  es que la ubicación  de las bolas  esté demasiado separada  para  buscarlas  al mismo  tiempo,  el jugador  tiene  permitido  tres minutos  de búsqueda  para  cada  bola. Adicionalmente,  aunque  las bolas  estén  en la misma  zona,  puede  haber otros  factores  que significan  que el jugador  tiene  permitido  un tiempo de búsqueda  de tres minutos  para  cada  bola . Ejemplos  de esto  incluyen cuando : •Se ve que la bola  original  entra  en unos  arbustos,  mientras  que la bola provisional  está  en rough  cercano,  pero  es claro  que no está  en los arbustos. •La bola  original  rebota  en el fairway  y es conocido  que apenas  llegó  al rough,  mientras  que la bola  provisional  cayó  mucho  más adentro  del rough  de donde  la bola  original  podría  haber  ido a reposar.
+
+## Bola Provisional
+
+Otra  bola  jugada en caso  de que la bola  recién  jugada por el jugador pueda  estar: •Fuera  de límites , o •Perdida  fuera  de un área de penalidad. Una bola  provisional  no es la bola  en juego  del jugador,  a menos  que se convierta  en la bola  en juego  bajo  la Regla  18.3c.
+
+## Bunker
+
+Un área especialmente preparada  con arena, a menudo  una depresión  de la que se ha sacado  el pasto  o la tierra. No son parte  de un bunker : •Un borde,  pared  o talud  en el margen  de un área  preparada  y compuesto  de tierra,  pasto,  panes  de pasto  apilados  o materiales artificiales. •Tierra  o cualquier  objeto  natural  en crecimiento  o fijo dentro  del margen  del área  preparada  (tales  como  pasto,  arbustos  o árboles). •La arena  que desborda  o que está  fuera  del margen  de un área preparada,  y 360Definiciones •Todas  las demás  áreas  de arena  en el campo  que no estén  dentro  del margen  de un área  preparada  (tales  como  zonas  desérticas  y otras áreas  naturales  de arena  o áreas  a las que a veces  se hace  referencia como  waste  areas). Los bunkers  son una de las cinco  áreas  definidas  del camp o. Un Comité  puede  definir  un área  preparada  de arena  como  parte  del área general  (lo que significa  que no es un bunker ) o puede  definir  un área  no preparada  de arena  como  un bunker . Cuando  un bunker  está siendo  reparado  y el Comité  define  todo  el bunker como  terreno  en reparación , será  considerado  como  parte  del área general  (lo que significa  que no es un bunker ). La palabra  “arena”  en esta  definición  y en la Regla  12 incluye  cualquier material  similar  a la arena  que es utilizado  como  material  de bunker  (tal como  conchilla), así como cualquier  tipo de tierra que  esté mezclado con la arena.
+
+## Caddie
+
+•Alguien  que ayuda  a un jugador  durante  una ronda , incluso  de las siguientes  maneras: •Llevando,  Transportando  o Manipulando  los Palos : Una persona que lleva,  transporta  (en carro  o carrito)  o manipula  los palos  de un jugador  durante  el juego  es el caddie  del jugador,  aunque  el jugador  no lo haya  nombrado  como  caddie , excepto  cuando  lo hace para  mover los palos,  la bolsa  o carro  del jugador  porque  estorban,  o por cortesía (como  recuperar  un palo  olvidado  por el jugador). •Dando  Consejo : El caddie del jugador  es la  única  persona (que  no sea el compañero  o el caddie  del compañero)  a la que un jugador  puede pedir  consejo . Un caddie  puede  también  ayudar  al jugador  de otras  formas  permitidas por las Reglas  (ver Regla  10.3b).
+
+## Campo
+
+Toda  el área  de juego  dentro  del margen  de cualquier  límite  establecido por el Comité : •Todas  las áreas  dentro  del margen  establecido  están  dentro  de límites y forman  parte  del campo . •Todas  las áreas  más allá del margen  establecido  están  fuera  de límites y no forman  parte  del campo. 361Un jugador  que compite  junto  con otro  jugador  como  un bando , ya sea en match  play o en stroke play .
+
+## Condición Anormal del Campo
+
+Cualquiera  de estas  cuatro  condiciones  definidas: •Agujero  de Animal, •Terreno  en Reparación,Definiciones •El margen  se extiende  verticalmente hacia  arriba  y hacia  abajo del terreno. El campo está compuesto  por las cinco  áreas  del campo definidas.
+
+## Comité
+
+La persona  o grupo  de personas  a cargo  de la competencia  o del campo . Comité/1  –Limitando  los Deberes  y Responsabilidades  de
+
+## Miembros  del Comité
+
+Un Comité  puede  optar  por limitar  el papel de algunos  miembros,  requerir que ciertas  decisiones  tengan el acuerdo  de miembros  específicos  o delegar  algunas  responsabilidades  a personas que  no integran el  Comité .
+
+## Ejemplos  incluyen:
+
+•Limitando  las responsabilidades  de un árbitro  en match  play o en stroke play . •Especificando  que solo  ciertos árbitros o miembros del  Comité pueden  hacer  cumplir  la Política  de Ritmo  de Juego. •Estableciendo que se requiere  un mínimo  de tres miembros  del Comité  para  decidir  si un jugador  será  descalificado  por falta grave  de conducta  bajo  la Regla  1.2. •Autorizar  al profesional o gerente  de un club  o a otra  persona designada  a dar decisione s en nombre  del Comité . •Autorizando  al jefe de personal  de mantenimiento  a suspender  el juego  en nombre  del Comité . •Limitando  qué árbitros,  durante  una competencia,  tienen  la autoridad para  definir  un área no marcada como  terreno  en reparación . (Nueva)
+
+## Compañero
+
+362Definiciones •Obstrucción  Inamovible,  o •Agua  temporal.
+
+## Condiciones que Afectan al Golpe
+
+El lie de la bola  en reposo  del jugador,  el área  del stance  y del swing pretendido,  la línea  de juego,  y el área  de alivio  donde  el jugador  va a dropear  o colocar  una bola. •El “área  del stance  pretendido”  incluye  el lugar  donde  el jugador colocará  sus pies,  y la totalidad del área que podría  razonablemente afectar  a cómo  y dónde  se posiciona  el cuerpo  del jugador  para preparar  y ejecutar  el golpe  que pretende. •El “área  del swing  pretendido”  incluye  toda  el área  que podría  afectar de forma  razonable a cualquier  parte  del backswing, el downswing  o de la finalización  del swing  para  el golpe  que pretende  ejecutar. •Cada  uno de los términos  “lie”, “línea  de juego”  y” área  de alivio”  tiene su propia  definición.
+
+## Conocido o Virtualmente Cierto
+
+El estándar  para  decidir  qué le ocurrió  a la bola  de un jugador  - por ejemplo,  si la bola  fue a reposar  a un área  de penalidad,  si se movió  o qué causó  que se moviera . “Conocido  o virtualmente  cierto”  significa  más que posible  o probable.
+
+## Significa  que:
+
+•Hay una evidencia concluyente  de que el hecho  en cuestión  le ocurrió a la bola  del jugador,  tal como  cuando  el jugador  u otros  testigos vieron  lo que sucedió,  o •Aunque  haya  un pequeño  margen  de duda,  toda  la información razonablemente  disponible  indica  que hay al menos  un 95% de probabilidad  de que el hecho  en cuestión  ocurrió . “Toda  la información  razonablemente  disponible”  incluye  toda  la información  que el jugador  sabe  y toda  otra  que pueda  obtener  con un esfuerzo  razonable  y sin una demora  irrazonable. Cuando  se está  buscando  una bola,  la determinación  de si es conocido o virtualmente  cierto  solamente  existe  si la información  fue descubierta dentro  de los tres minutos  de búsqueda.
+
+## Definiciones
+
+Conocido  o Virtualmente  Cierto/1  – Aplicando  el Estándar de “Conocido  o Virtualmente  Cierto”  Cuando  la Bola  se
+
+## Mueve
+
+Cuando  no es “conocido”  que causó  que la bola  se mueva , toda  la información  razonablemente  disponible  debe  ser considerada  y la evidencia  debe  evaluarse  para  determinar  si es “virtualmente  cierto”  que el jugador, oponente  o influencia  externa  causó  que la bola  se moviera. Dependiendo  de las circunstancias,  información  razonablemente disponible  puede incluir, pero  no está limitada  a: •El efecto  de cualquier  acción  tomada  cerca  de la bola  (como el  mover un impedimento  suelto , swings  de práctica,  apoyar  el palo,  tomar  el stance ), •Tiempo  transcurrido entre dichas  acciones y el  movimiento  de la  bola, •El lie de la bola antes que  se mueva  (como en el fairway,  apoyada sobre  pasto  largo,  sobre  una imperfección  en la superficie  o en el green), •Las condiciones  del terreno  cerca  de la bola  (como  el grado  de pendiente  o presencia  de irregularidades  en la superficie,  etc.),  y •Velocidad  y dirección del  viento,  lluvia  u otra condición  climática. Conocido o Virtualmente Cierto/2 – Lo Virtualmente Cierto Es Irrelevante si Sale a la Luz Luego de Terminados los Tres
+
+## Minutos de Búsqueda
+
+Cuando  se está buscando  una bola  bajo  una Regla  que usa el estándar de conocido  o virtualmente  cierto  (como  la Regla  17.1d) determinar  si es conocido  o virtualmente  cierto  debe  basarse  en evidencia  conocida  por el jugador  al momento  de finalizar  el período  de tres minutos  de búsqueda . Ejemplos  de cuándo  los hallazgos  tardíos  del jugador  son irrelevantes, incluyen  cuando: •El golpe  de salida  de un jugador  va a reposar  a un área  que tiene rough  espeso  y un gran  agujero  de animal . Luego  de tres minutos  de búsqueda,  se determina  que no es conocido  o virtualmente  cierto  que la bola  esté  en el agujero  de animal . Mientras  el jugador  regresa  al área de salida , la bola  es encontrada  en el agujero  de animal . Aun cuando  el jugador  no ha puesto  todavía  otra  bola  en juego , el jugador  debe  aliviarse  bajo  golpe  y distancia  por una bola  perdida (Regla 18.2b – Qué Hacer Cuando  la Bola  Está Perdida o  Fuera de Límites)  ya que no era conocido  o virtualmente  cierto  que la bola estaba  en el agujero  de animal , cuando  finalizó  el tiempo  de búsqueda. 364Cualquier  comentario  verbal  o acción  (tal como  mostrar  qué palo  acaba de ser utilizado  para  ejecutar  un golpe ), cuya  intención  es influir  en un jugador  para: •La elección de un palo, •La ejecución  de un golpe , o •La decisión  sobre  cómo  jugar  durante  un hoyo  o una ronda . Pero consejo no incluye información pública,  tal como: •La ubicación  de cosas  en el campo  tales  como  el hoyo,  el green,  el fairway,  las áreas  de penalidad,  bunkers, o la bola de otro  jugador.Definiciones •Un jugador  no puede  encontrar  su bola  y cree  que puede  haber sido levantada  por un espectador  (influencia  externa ), pero  no hay suficiente evidencia  para  que sea virtualmente  cierto . Poco  tiempo después  de que termine  el período  de tres minutos  de búsqueda,  se encuentra  que un espectador  tiene  la bola  del jugador. El jugador  debe  aliviarse bajo  golpe  y distancia por una bola  perdida (Regla  18.2b)  dado  que el movimiento  por la influencia  externa  sólo fue conocido  luego  de terminado  el período  de búsqueda. Conocido  o Virtualmente  Cierto/3  – Jugador  No Sabe  que la Bola  fue Jugada  por Otro  Jugador Debe  ser conocido  o virtualmente cierto  que la bola de un jugador ha sido jugada  por otro  jugador  como  bola equivocada para  tratarla como  movida . Por ejemplo, en stroke play , el Jugador  A y el Jugador  B envían  sus golpes de salida  hacia  el mismo  lugar. El Jugador  A encuentra  una bola  y la juega. El Jugador  B se adelanta  a buscar  su bola  y no la puede  encontrar. Luego  de tres minutos,  el Jugador  B vuelve  hacia el  tee para  jugar  otra bola.  En el camino,  encuentra  la bola  del Jugador  A y por lo tanto  sabe que el Jugador A ha jugado  su bola  por error. El Jugador  A tiene  la penalidad general  por jugar  bola equivocada  y debe jugar  su propia bola  (Regla 6.3c). La bola  del Jugador A no estaba perdida aunque  ambos  jugadores  buscaron  durante  más de tres minutos porque el Jugador  A no comenzó  la búsqueda  de su bola;  la búsqueda  fue de la bola  del Jugador  B. Respecto  a la bola  del Jugador  B, su bola  original estaba  perdida  y debe  poner  otra  bola en juego  con penalidad  de golpe  y distancia  (Regla  18.2b), porque  cuando  venció el período  de tres minutos de búsqueda,  no era conocido  o virtualmente  cierto  que la bola había  sido jugada  por otro  jugador.
+
+## Consejo
+
+
+
+## Definiciones
+
+365•La distancia  de un punto  a otro. •La dirección  del viento,  o •Las Reglas. Consejo/1  – Comentarios  Verbales  o Acciones  Que  Son
+
+## Consejo
+
+Ejemplos  de cuándo  comentarios  o acciones  son considerados  consejo  y no están  permitidos  incluyen: •Un jugador  hace  una declaración  referida  al palo  elegido  con la intención  de que sea escuchada  por otro  jugador  que tiene  un golpe similar. •En stroke play  individual, el jugador  A, que recién  ha embocado en el hoyo  7, le demuestra  al jugador  B, cuya  bola  estaba  apenas afuera  del green , como  ejecutar  el próximo  golpe . Como  el jugador B no ha completado  el hoyo,  el jugador  A es penalizado  en el hoyo  7. Pero,  si A y B han completado el hoyo  7, la penalidad al jugador  A se aplica  en el hoyo  8. •La bola  de un jugador  está  en un lie muy  malo  y el jugador  está pensando  qué acción  tomar.  Otro  jugador comenta:  “No tiene  golpe posible.  Si yo fuera  usted,  decidiría  aliviarme  por bola  injugable”.  Este comentario  es consejo  porque  pudo  haber  influenciado  en el jugador para  decidir  como  jugar  durante  el hoyo. Consejo/2  – Comentarios  Verbales  o Acciones  Que  No
+
+## Son Consejo
+
+Ejemplos  de comentarios  o acciones  que no son consejo  incluyen: •Durante  el juego  del hoyo  6, un jugador  le pregunta  a otro  jugador  que palo  utilizó  en el hoyo  4 que es un par 3 de una distancia  similar. •Un jugador  ejecuta  su segundo  golpe  que cae en el green . Otro  jugador hace  lo mismo.  El primer  jugador  luego  le pregunta  al segundo qué palo  utilizó  para  el segundo  golpe . •Luego  de ejecutar  un golpe , un jugador  dice:  “Debería  haber  jugado  el hierro  5” dirigiéndose  a otro  jugador  del grupo  quien  debe  aún jugar hacia  el green , pero  sin querer  influenciar  en su juego. •Sin tocar  o mover  nada,  un jugador  mira  dentro  de la bolsa  de palos de otro  jugador  para  ver que palo  utilizó  para  el último  golpe. 366Definiciones •Mientras  alinea su putt,  un jugador  por error  pide  consejo  al caddie de otro  jugador  pensando  que era el suyo.  El jugador  advirtió inmediatamente  el error  y le dijo al otro  caddie  que no le conteste. Consejo/3  – Cuándo  las Declaraciones  que Incluyen
+
+## Información  Pública  son Consejo
+
+Declaraciones  de información  pública  pueden  darse  sin penalidad. Pero  son consejo  cuando la declaración también contiene información destinada  a influir  a un jugador  en la elección  de un palo,  en la ejecución  de un golpe , o cómo  jugar  durante  un hoyo  o la ronda . Ejemplos  de declaraciones que  no son consejo , incluyen: •“El área  de penalidad está  cinco yardas  corta del  borde frontal  del green.” •“El viento  está  soplando  desde  el oeste,  lo que significa  que en este hoyo  está  soplando  desde  la derecha.” Ejemplos de declaraciones  que son consejo , incluyen: •“El área  de penalidad  está cinco  yardas corta  del borde  frontal del green,  por lo que es posible  que usted  quiera  jugar  suficiente  palo para  llegar  al centro  del green.” •“En este  hoyo  el viento  sopla  desde  atrás  de nosotros,  así que asegúrese de que la bola  caiga  corta  del green.” (Nueva)
+
+## Dropear
+
+Sostener  la bola  y dejarla  caer,  de tal forma  que caiga  a través  del aire,  con la intención  de que la bola  esté  en juego . Si el jugador  deja  caer  la bola  sin intención  de que esté  en juego , la bola no ha sido dropeada  y no está  en juego  (ver Regla  14.4). Cada  Regla  de alivio identifica  un área  de alivio  específica  donde  la bola debe  ser dropeada  y quedar en reposo . Al tomar  alivio,  el jugador  debe  dejar  caer  la bola  desde  una ubicación  a la altura  de la rodilla  de tal forma  que la bola: •Caiga  directamente,  sin que el jugador  la arroje,  la rote  o la haga  rodar o usando cualquier  otro  movimiento que pueda afectar  donde  quedar á en reposo , y •No toque  ninguna parte  del cuerpo  o equipo  del jugador  antes de golpear  el terreno  (ver Regla  14.3b). 367Enterrada Cuando  la bola  de un jugador  está  en su propio  impacto  hecho  como resultado  del golpe  previo  del jugador  y parte  de la bola  está por debajo del nivel  del suelo . Para  estar  enterrada , no es necesario  que la bola  esté  tocando  tierra  (por ejemplo,  puede  haber  pasto  o impedimentos  sueltos  entre  la bola  y la tierra).
+
+## Equipo
+
+Cualquier cosa utilizada, llevada, sostenida o transportada por el jugador o por su caddie . Los objetos utilizados para cuidar el campo , como los rastrillos, solo son equipo cuando son sostenidos o transportados por el jugador o su caddie Los objetos, que no sean palos, llevados por otra persona para el jugador no son equipo, aunque pertenezcan al jugador.Definiciones
+
+## Embocada
+
+Cuando  una bola  está en reposo  dentro  del hoyo  después  de un golpe  y toda  la bola  está  por debajo  de la superficie  del green . Cuando  las Reglas  hacen  referencia  a “embocando”  o “embocar”,  se refiere  a cuando  la bola  del jugador  está  embocada. Para  el caso  especial  de una bola  reposando  contra  el astabandera  en el hoyo , ver la Regla 13.2c  (la bola  se trata  como  embocada si alguna parte de la bola está  por debajo  de la superficie  del green ). Embocada/1  – Para  estar  Embocada  Toda  la Bola  Debe estar  Debajo  de la Superficie  Cuando  está  Enterrada  en un Costado  del Hoyo Cuando  una bola  está enterrada  en el costado  del hoyo , y toda  ella no está debajo  de la superficie  del green,  no está embocada . Esto  es así aunque la bola  toque  el astabandera. Embocada/2  – La Bola  se Considera  Embocada  A Pesar  de que No “Queda en Reposo” La palabra “queda en reposo”  en la Definición  de Embocada  es utilizada para  dejar  en claro  que si una bola  cae dentro  del hoyo  y rebota  hacia afuera,  no está embocada . No obstante,  si un jugador  retira  del hoyo  una bola  que aún se está moviendo  (como  dando  rondas  o rebotando  en el fondo  del hoyo ) se considera  embocada  más allá de que la bola  no quedó en reposo  en el hoyo . 368Definiciones
+
+## Falta  Grave
+
+En stroke play , cuando  jugar  desde  un lugar equivocado  podría  dar al jugador  una ventaja significativa  comparada  con el golpe  a ser ejecutado desde  el lugar  correcto. Al hacer  esta  comparación,  para  decidir  si hubo  falta grave , los factores  a tener  en cuenta  incluyen: •La dificultad  del golpe , •La distancia  desde  la bola  al hoyo , •El efecto  de obstáculos  en la línea  de juego, y •Las condiciones  que afectan  al golpe . El concepto  de falta grave no se aplica  en match  play porque  el jugador  pierde  el hoyo  si juega  desde  un lugar  equivocado .
+
+## Four -Ball
+
+Una modalidad  de juego  en la que compiten  bandos  de dos compañeros , jugando  cada  jugador  su propia  bola . El score  del bando  para  un hoyo  es el score  más bajo  de los dos compañeros  en ese hoyo . Four -Ball se puede  jugar  como  competencia  match  play entre  un bando  de dos compañeros  y otro bando  de dos compañeros  o en una  competencia stroke play  entre  múltiples  bandos  de dos compañeros .
+
+## Foursomes (también conocido como “Golpes
+
+
+
+## Alternados”)
+
+Una modalidad de juego  donde  dos compañeros  compiten  como  un bando  jugando  una bola  en orden  alternado  en cada  hoyo. Foursomes  se puede  jugar  como  competencia  match  play entre  un bando  de dos compañeros  y otro bando  de dos compañeros  o en  una competencia  stroke play  entre  múltiples  bandos  de dos compañeros .
+
+## Fuera de Límites
+
+Todas  las áreas  más allá del margen  del campo  establecido  por el Comité . Todas  las áreas  dentro  de ese margen  están  dentro  de límites . El margen de límites  del campo se extiende verticalmente  hacia  arriba  y hacia  abajo del terreno: •Esto  significa  que todo  el terreno  y cualquier  otra  cosa  (como cualquier  objeto  natural  o artificial)  dentro  de dicho  margen  está dentro  del campo , ya sea por encima o por debajo de la superficie  del terreno. 369Definiciones •Si un objeto  está  dentro  y fuera  del margen  (como  los peldaños  de una valla  de límites,  o un árbol  enraizado  fuera  del margen  con ramas que se extienden  dentro  del margen  o viceversa),  solo la parte  del objeto  que está  fuera  del margen  está  fuera  de límites . El margen  de límites  debería  ser definido  por objetos  de límites  o líneas: •Objetos  de límites:  Cuando  está  definido  por estacas  o una valla, el margen  de límites  está definido  por la línea  entre  las caras  internas de las estacas  o postes  de la valla a nivel  de suelo  (excluyendo  los soportes  angulares)  y esas  estacas  o los postes  de la valla están  fuera de límites. Cuando  está definido  por otros  objetos  como  un muro  o cuando  el Comité  desea  tratar  una valla  de límites  de una manera  diferente,  el Comité  debería  definir  el margen  del fuera  de límites . •Líneas : Cuando  está  definido  por una línea  pintada  en el suelo,  el margen  de límites  es el borde  interior  y la línea  en sí está  fuera  de límites . Cuando  una línea  en el suelo  define  el margen  de los límites,  se pueden utilizar  estacas  para  identificar  dónde  está  localizado el fuera  de límites. Cuando  se usan  estacas  para  definir  o identificar  el margen  de límites, ellas  son objetos  de límites. Las estacas  o líneas  de fuera  de límites  deben ser blancas.
+
+## Fuerzas Naturales
+
+Los efectos  de la naturaleza como  el viento, el agua o cuando  algo  sucede sin razón  aparente  debido  a los efectos  de la gravedad.
+
+## Golpe
+
+El movimiento  del palo  hacia  adelante  ejecutado  para  golpear  la bola. Pero  un golpe no ha  sido ejecutado  si el jugador: •Decide  durante  el downswing  no golpear  la bola  y lo evita  deteniendo intencionalmente  la cabeza  del palo  antes  de que llegue  a ella, o si no puede  detenerlo,  falla deliberadamente  el golpe  a la bola . •Accidentalmente,  golpea  la bola  cuando  efectúa  un swing  de práctica  o mientras  se está  preparando  para  ejecutar  un golpe . Cuando  las Reglas  se refieren  a “jugando  una bola”,  significa  lo mismo  que ejecutando  un golpe.  El score  de un jugador  para  un hoyo  o una ronda  se describe  con un número  de “golpes”,  o “golpes  ejecutados”,  lo que significa  todos  los golpes ejecutados  y cualquier  golpe de  penalidad (ver Regla  3.1c). 370Definiciones Golpe/ 1 – Decidiendo  si un Golpe  Fue Ejecutado Si un jugador  comienza  el downswing  con un palo  intentando  golpear  la bola,  su acción  cuenta  como  un golpe  cuando : •La cabeza  del palo  es desviada o detenida por una influencia  externa (como  una rama  de un árbol)  sea o no golpeada  la bola. •La cabeza  del palo  se desprende  de la varilla  durante  el downswing y el jugador  continúa  el downswing  sólo con la varilla,  sea o no la bola golpeada  por la varilla . •La cabeza  del palo  se desprende  de la varilla  durante  el downswing  y el jugador  continúa  el downswing  sólo con la varilla,  cayendo  la cabeza del palo  y golpeando  la bola. Las acciones  del jugador  no cuentan  como  un golpe  en cada  una de las siguientes  situaciones : •Durante  el downswing,  la cabeza  del palo  del jugador  se desprende  de la varilla . El jugador  detiene  el downswing  antes  de llegar  a la bola, pero  la cabeza  del palo  cae y golpea  y mueve  la bola . •Durante  el backswing,  la cabeza  del palo  de un jugador  se desprende de la varilla.  El jugador  completa  el downswing  con la varilla,  pero  no golpea  la bola. •Una bola  está  alojada  en la rama  de un árbol  más allá del alcance  de un palo.  Si el jugador  mueve  la bola  por golpear  una parte  más baja de la rama  en lugar  de la bola,  se aplica  la Regla  9.4 (Bola  Levantada  o Movida  por el Jugador).
+
+## Golpe  y Distancia
+
+El procedimiento  y penalidad  cuando  un jugador  toma  alivio  bajo  las Reglas  17, 18 ó 19, jugando  una bola  desde  donde  jugó  el golpe anterior  (ver la Regla  14.6). El término  “golpe  y distancia”  significa  que el jugador : •Incurre en un golpe de penalidad, y •Pierde el beneficio de cualquier distancia ganada hacia el hoyo desde el punto desde el cual el último golpe fue ejecutado.
+
+## Definiciones
+
+
+
+## Green
+
+El área  en el hoyo  que el jugador  está  jugando  que: •Está  especialmente  preparada  para jugar  con el  putter,  o •El Comité  la haya  definido  como  el green  (como  cuando  se usa un green  temporal). El green  de un hoyo  contiene  el hoyo  dentro  del cual el jugador  trata de jugar  una bola. El green  es una de las cinco  áreas  definidas del  campo . Los greenes de todos los  otros  hoyos (los  cuales  el jugador  no está jugando  en ese momento) son greenes equivocados y parte del área  general. El margen de un green  se define  por donde  se puede  apreciar  que comienza  el área  especialmente preparada (por  ejemplo, donde  el pasto ha sido cortado  claramente  para identificar  el margen), a  menos que el Comité  defina  el margen  de una manera  diferente  (como  usando  una línea  o puntos). Si un green  doble  es usado  para  dos hoyos  diferentes: •El área total preparada conteniendo ambos hoyos es tratada como el green cuando se juega cada hoyo. •Pero el Comité puede establecer un margen que divida el green doble en dos greenes diferentes, de modo que cuando un jugador está jugando uno de los hoyos, la parte del green doble para el otro hoyo sea un green equivocado.
+
+## Green Equivocado
+
+Cualquier  green  en el campo  que no sea el green  del hoyo  que el jugador está  jugando.  Greenes  equivocados  incluyen: •Los greenes  de todos  los demás  hoyos,  que el jugador  no está  jugando en ese momento, •El green  normal  para  un hoyo  donde  se está  usando  un green temporal,  y •Los greenes  de todos  los demás  hoyos,  que el jugador  no está  jugando en ese momento, •Todos  los greenes  de práctica  para  ensayar los golpes  con el putter, chips  o golpes  de approach,  a menos  que el Comité los excluya  por medio  de una Regla  Local. Los greenes  equivocados  son parte  del área  general.
+
+## Definiciones
+
+
+
+## Honor
+
+El derecho  de un jugador  a jugar  en primer  lugar  desde  el área  de salida (ver Regla  6.4).
+
+## Hoyo
+
+El punto  de finalización  en el green  del hoyo  que se está  jugando. •El hoyo  tendrá  108 mm (4 ¼ pulgadas)  de diámetro  y por lo menos 101,6 mm (4 pulgadas)  de profundidad . •Si se utiliza  un revestimiento,  su diámetro  exterior  no excederá  de 108 mm (4 ¼ pulgadas).  Debe  estar  hundido  al menos  25,4  mm (1 pulgada)  por debajo de la superficie  del green , salvo  que la naturaleza del suelo  haga  que deba  estar  más cerca  de la superficie. La palabra  “hoyo”  (cuando  no sea utilizada  como  Definición  en cursiva) es utilizada  a lo largo  de la Reglas  para  referirse  a la parte  del campo asociado con un área  de salida,  green  y hoyo  particular . El juego  de un hoyo  comienza  en el área  de salida y finaliza  cuando  la bola  es embocada en el hoyo  del green  (o cuando  las Reglas  de otra  forma  dicen  que el hoyo está completado).
+
+## Impedimento Suelto
+
+
+
+## Cualquier  objeto  natural  suelto,  como:
+
+•Piedras,  pasto  suelto,  hojas y  ramas , •Animales muertos  y desechos  de animales, •Lombrices, insectos y animales  similares que se pueden  retirar fácilmente,  y los montoncitos  o telarañas  hechos  por éstos  (como desechos  de gusanos  y hormigueros),  y •Trozos  de tierra  compactada  (incluidos  los tapones  de aireación). Estos  objetos  naturales  no están  sueltos  si están: •Fijos  o en crecimiento, •Sólidamente  empotrados  en el suelo  (esto  es, que no se pueden retirar  fácilmente),  o • Adheridos  a la Bola.
+
+## Definiciones
+
+
+
+## Casos  Especiales :
+
+•La Arena  y la Tierra  Suelta  (esto  no incluye  un montículo  hecho  por una Lombriz  o animal  similar)  no son impedimentos  sueltos  (excepto los desechos  de lombrices  y los hormigueros) . •El Rocío,  la Escarcha  y el Agua  no son impedimentos  sueltos. •La Nieve  y el Hielo  Natural  (que  no sea escarcha),  son impedimentos  sueltos  o, cuando  están  en el suelo,  agua  temporal,  a elección  del jugador. •Las Telarañas  son impedimentos  sueltos  aun cuando  están  unidas a otro objeto. •Insectos  Vivos  Sobre  una Bola  son impedimentos  sueltos. Impedimento Suelto/1 – Estatus de la Fruta Fruta  que se ha desprendido  de un árbol  o arbusto  es un impedimento suelto , aún si la fruta  es de un arbusto  o árbol  que no se encuentra  en el campo . Por ejemplo,  fruta  que ha sido parcialmente  comida  o cortada  en pedazos, y la piel que se ha sacado  de un trozo  de fruta  son impedimentos  sueltos . Pero,  cuando  es llevada  por un jugador,  es su equipo . Impedimento Suelto/2 – Cuando un Impedimento Suelto se
+
+## Convierte en Obstrucción
+
+Impedimentos sueltos pueden  ser transformados  en obstrucciones  a través de procesos  de construcción  o manufactura. Por ejemplo,  un tronco  (impedimento  suelto ) que ha sido partido  y se le han puesto  patas,  a través  de la construcción  se lo ha cambiado  y convertido  en un banco  (obstrucción ). Impedimento Suelto/3 – Estatus de la Saliva La saliva  puede  ser tratada  tanto  como  agua  temporal  o como  un impedimento  suelto  a opción  del jugador. Impedimento Suelto/4 – Impedimentos Sueltos Usados para Cubrir un Camino La grava  es un impedimento  suelto  y un jugador  puede  quitar impedimentos  sueltos  bajo  la Regla  15.1a.  Este  derecho  no está afectado 374Definiciones por el hecho  que,  cuando  un camino  está cubierto  por grava,  se convierte en un camino  con superficie  artificial,  siendo  una obstrucción  inamovible . El mismo  principio  se aplica  a caminos  o senderos  construidos  con piedra, conchilla,  pedacitos  de madera  o similares . En una situación  tal, el jugador  puede: •Jugar la  bola  como reposa  sobre  la obstrucción  y remover  grava (impedimento  suelto ) del camino  – Regla  15.1a. •Aliviarse  sin penalidad  de una condición  anormal  del campo (obstrucción  inamovible ) – Regla  16.1b. El jugador  podría  también  remover  algo de grava  del camino  para  decidir sobre  la posibilidad  de jugar  la bola  como  reposa  antes  de decidir  tomar alivio  sin penalidad.
+
+## Influencia Externa
+
+Cualquiera  de las siguientes  personas  o cosas  que pueden  afectar  en lo que le sucede  a la bola  o equipo  del jugador,  o al campo : •Cualquier  persona  (incluyendo  otro  jugador),  excepto  el jugador  o su caddie o el compañero o oponente del jugador o cualquiera  de sus caddies , •Cualquier  animal , y •Cualquier  objeto  natural  o artificial  o cualquier  otra  cosa  (incluyendo otra  bola  en movimiento),  excepto  las fuerzas  naturales , y •Aire o agua  propulsados  artificialmente,  como desde un ventilador o sistema  de irrigación.
+
+## Stroke Play (Juego por Golpes)
+
+Una modalidad  de juego  donde  un jugador  o bando  compite  contra  todos los demás  jugadores  o bandos  en la competencia. En la forma  normal  de stroke play  (ver Regla  3.3): •El score  del jugador  o del bando  para  una ronda  es el número  total de golpes  (incluyendo  los golpes  ejecutados  y de penalidad)  para embocar  en cada  hoyo,  y •El ganador  es el jugador  o bando  que completa  todas  las rondas  con el menor  número  de golpes. Otras  modalidades  de stroke play  con diferentes métodos  de anotar los scores  son Stableford , Score  Máximo  y Par/Bogey  (ver la Regla  21). 375Definiciones Todas  las formas  de stroke play  se pueden  jugar  en competencias individuales  (cada  jugador  compite  a título  individual)  o en competencias en que toman  parte  bandos  de compañeros  (Foursomes  o Four -Ball).
+
+## Lie
+
+El punto  en el cual una bola  está  en reposo  y cualquier  objeto  natural  en crecimiento  o fijo, obstrucción  inamovible,  objeto  integral,  u objeto  de límites  tocando  la bola  o justo  al lado  de ella. Los impedimentos  sueltos  y las obstrucciones  movibles  no son parte  del lie de la bola.
+
+## Línea de Juego
+
+La línea  que el jugador  intenta  que siga su bola  después  de un golpe , incluyendo  el área  que está  a una distancia  razonable  por encima  del terreno  y a ambos  lados  de esa línea . La línea de juego  no es necesariamente una línea  recta  entre  dos puntos (por  ejemplo, puede  ser una línea curva  en función  de por donde  el jugador  intente  que vaya la bola).
+
+## Longitud del Palo
+
+La longitud  del palo  más largo  de los 14 (o menos)  que el jugador  tiene durante  la ronda , (de acuerdo  con lo permitido  en la Regla  4.1b (1)) a excepción  del putter . La longitud  del palo  es una unidad  de medida  utilizada  para  definir  el área de salida  del jugador  en cada  hoyo  y para  determinar  el tamaño  del área de alivio  del jugador  cuando  se alivia  bajo  una Regla. Para  el propósito  de medir  esas  áreas,  se usa el largo  total  del palo, comenzando  en la punta  de este  y terminando  en el extremo  trasero  del grip.  Pero  cualquier  accesorio  al final  del grip no es parte  de la longitud del palo . Longitud  del Palo/1  – Cómo  Medir  Cuando  el Palo  Más
+
+## Largo  se Rompe
+
+Si el palo más largo que un jugador tiene se rompe durante una ronda , la longitud original del palo roto continúa utilizándose para determinar la  medida de sus áreas de alivio . Sin embargo, si el palo más largo se rompe y el jugador tiene permitido reemplazar el palo roto (Regla 4.1a(2)) y lo hace, el palo roto no es más considerado como su palo más largo.
+
+## Definiciones
+
+Si un jugador  comienza  una ronda  con menos  de 14 palos  y decide  agregar otro  palo  que es más largo  que todos  con los que comenzó,  el palo agregado  es usado  para  medir  en tanto  no sea el putter.
+
+## Lugar Equivocado
+
+Cualquier  lugar  en el campo  que no sea donde  el jugador  debe  o tiene permitido  jugar  su bola  bajo  las Reglas. Ejemplos  de jugar  desde  un lugar  equivocado  son: •Jugar  una bola  después  de recolocarla  en lugar  equivocado, o sin recolocarla  cuando  es requerido  por las Reglas. •Jugar  una bola  dropeada  desde  fuera  del área  de alivio  requerida. •Aliviarse  bajo  una Regla  inaplicable,  de forma  que la bola  se haya dropeado  y jugado  desde  un lugar  no permitido  por las Reglas,  y •Jugar  una bola  desde  una zona  de juego  prohibido  o cuando  ésta interfiere  con el área del stance  o swing  pretendido por el jugador. Un jugador  no ha jugado  desde un  lugar  equivocado  en las siguientes situaciones: •Cuando  una bola  ha sido jugada  desde  afuera  del área  de salida  al comenzar  el juego  de un hoyo  o al tratar  de corregir  ese error  (ver
+
+## Regla  6.1b),  o
+
+•Cuando  una bola  es jugada  desde  donde  fue a reposar,  cuando  un jugador  no repitió  el golpe  cuando  estaba  obligado  a hacerlo.
+
+## Marcador de Bola
+
+Un objeto  artificial  cuando  se utiliza  para  marcar  la posición  de una bola que se va a levantar,  tal como  un tee, una moneda,  un objeto  fabricado para  ser un marcador de bola  u otro  pequeño  objeto  del equipo . Cuando  una Regla  se refiere  a mover  un marcador  de bola , esto  quiere decir  un marcador  de bola  colocado  en el campo  para  marcar  la posición de la bola  que ha sido levantada  y aún no ha sido recolocada.
+
+## Definiciones
+
+
+
+## Marcar
+
+Indicar  el punto  donde  una bola  está  en reposo,  por medio  de: •Colocar  un marcador  de bola  inmediatamente detrás  o al lado  de la bola,  o • Sujetar  un palo  en el suelo  inmediatamente  detrás  o al lado  de la bola. Esto  se hace  para  indicar  el punto  donde  la bola  debe  ser recolocada después  de ser levantada.
+
+## Match Play
+
+Una modalidad  de juego  donde  un jugador  o bando  juega  directamente contra  un oponente  o bando  opuesto  en un match  mano  a mano  de una o más rondas : •Un jugador  o un bando  gana  un hoyo  en el match  al completar  el hoyo  en menos  golpes,  (incluyendo  los golpes  ejecutados  y de penalidad),  y •El match  se gana  cuando  un jugador  o bando  tiene  una ventaja sobre  el oponente  o bando  opuesto  de más hoyos  de los que quedan  por jugar . Match  play se puede jugar como  un match individual  (donde un  jugador juega  directamente  contra  un oponente ), un match  Three -Ball o un match Foursomes o Four - Ball entre bandos  de dos compañeros.
+
+## Mejorar
+
+Alterar  una o más de las condiciones  que afectan al  golpe  u otras condiciones  físicas  que afectan al juego, con lo que el jugador  obtiene una ventaja potencial  al ejecutar  el golpe .
+
+## Objeto de Límites
+
+Objetos  artificiales  que definen  o identifican  fuera  de límites , como muros,  vallas,  estacas  y verjas,  de los cuales  no se permite  el alivio  sin penalidad. Esto  incluye  cualquier  base  y poste  de una valla  de límites,  pero  no así a: •Soportes  angulares o cables  de retención  que están  unidos  a una pared,  muro  o valla, o •Cualquier puerta,  peldaño,  puente  o construcción similar  utilizada para  pasar  la pared  o valla. Los objetos de  límites se consideran  inamovibles,  aun si  son móviles o si una parte  de ellos  es movible  (ver Regla  8.1a). Los objetos  de límite  no son obstrucciones  u objetos  integrales . 378Definiciones Objeto  de Límites/ 1 – Estatus  de Elementos  Unidos  al
+
+## Objeto  de Límites
+
+Objetos  que están  unidos  a un objeto  de límites , pero  que están  excluidos de la definición  de objeto  de límites , son obstrucciones  y el jugador  podrá aliviarse  de ellos  sin penalidad . Si el Comité  no quiere  dar alivio  sin penalidad  de una obstrucción  unida a un objeto  de límites , puede  dictar  una Regla  Local  diciendo  que la obstrucción  es un objeto integral , en cuyo  caso  pierde  su condición  de obstrucción  y no se permite  el alivio  sin penalidad. Por ejemplo,  si soportes  angulares  están  tan cerca  de un cerco  de límites que dejando  los soportes  como  obstrucciones  esencialmente  daría  a los jugadores  alivio  sin penalidad del  objeto  de límites , el Comité  puede definir  a los soportes  como  objetos  integrales.
+
+## Objeto Integral
+
+Un objeto  artificial  definido  por el Comité  como  parte  de la dificultad  de jugar  el campo,  del cual no existe alivio sin penalidad . Los objetos  integrales  son tratados  como  inamovibles  (ver Regla  8.1a). Pero  si parte  de un objeto integral  (como  un portón  o puerta  o parte de un cable  fijo) cumple  con la definición  de obstrucción  movible,  esa parte se considera  como  una obstrucción  movible. Objetos  artificiales  definidos  por el Comité  como  objetos  integrales  no son obstrucciones  u objetos  de límites .
+
+## Obstrucción
+
+Cualquier  objeto  artificial,  excepto  los objetos  integrales  y los objetos de límites . Ejemplos  de obstrucciones : •Caminos  y senderos con  superficies artificiales,  incluyendo  sus bordes artificiales. •Edificios  y refugios para lluvia. •Aspersores,  drenajes y cajas  de riego  o de control. •Estacas,  paredes,  verjas  o vallas (pero  no cuando  estas  son objetos  de límites  que definen o identifican  los márgenes  del campo ). •Carritos  de golf,  corta doras,  autos  y otros  vehículos. •Contenedores  de basura,  postes  de señales  y bancas,  y •Equipo  del jugador,  astabanderas  y rastrillos. 379Obstrucción Movible Una obstrucción  que se puede  mover  con un esfuerzo razonable  y sin dañar la obstrucción o el campo . Si parte  de una obstrucción  inamovible  u objeto integral  (como  un portón o puerta  o parte  de un cable  fijo) cumple  con estos  dos requisitos, esa parte se considera como una obstrucción movible. Pero esto no se aplica  si la parte movible  de una obstrucción inamovible u objeto integral  no está  destinada  a ser movida  (como  una piedra movible  que forma  parte  de un muro  o pared  de piedra). Aunque  una obstrucción sea movible,  el Comité la puede  declarar como  una obstrucción  inamovible .Definiciones Una obstrucción  es una obstrucción  movible  o una obstrucción inamovible . Si parte  de una obstrucción  inamovible  (como  un portón  o puerta  o parte de  un cable  fijo) cumple  con la  definición de  obstrucción movible , esa parte se  considera como una  obstrucción movible. Los puntos y  las líneas  pintadas,  como aquellos  usados para  definir límites y áreas  de penalidad,  no son  obstrucciones. Ver Procedimientos  del Comité,  Sección  8; Modelo  de Regla  Local F-23 (El Comité  puede  adoptar  una Regla  Local  definiendo  ciertas obstrucciones  como  obstrucciones  inamovibles  temporales,  para  las cuales  se aplica  un procedimiento  especial  de alivio)
+
+## Obstrucción Inamovible
+
+
+
+## Cualquier  obstrucción  que:
+
+•No se puede  mover  sin un esfuerzo  irrazonable o sin dañar  la obstrucción  o el campo , y •De otra manera  no cumple  con la  definición de  obstrucción movible. El Comité  puede  definir  cualquier  obstrucción  como  una obstrucción inamovible , incluso si  cumple  con la definición  de obstrucción  movible . Obstrucción Inamovible/1 – El Pasto Alrededor de una Obstrucción No es Parte de la Obstrucción Cualquier  pasto  que está contiguo  o cubriendo  una obstrucción inamovible , no es parte  de la obstrucción. Por ejemplo, una tubería de agua está parte debajo y parte arriba del terreno. Si la tubería que está debajo del terreno hace que el pasto esté levantado, el pasto levantado no es parte de la obstrucción inamovible .
+
+## Definiciones
+
+
+
+## Oponente
+
+La persona contra la que un jugador compite en un match. El término oponente solo se aplica en match play .
+
+## Par/Bogey
+
+Una modalidad  de stroke play  en la que se anota  el resultado  como  en match  play donde: •Un jugador  o bando  gana  o pierde  un hoyo  al completar  el hoyo  en menos  golpes  o más golpes  (incluyendo  los golpes  ejecutados  y de penalidad)  que un score  fijo establecido  para  ese hoyo  por el
+
+## Comité,  y
+
+•La competencia  la gana  el jugador  o bando  con el mayor  número  de hoyos  ganados  contra  hoyos  perdidos  (es decir,  sumando  los hoyos ganados  y restando  los hoyos  perdidos) .
+
+## Penalidad General
+
+Pérdida  del hoyo  en match  play o dos golpes  de penalidad en stroke play .
+
+## Punto de Máximo Alivio Disponible
+
+El punto  de referencia  para  tomar  alivio  sin penalidad de una condición anormal  del campo  en un bunker  (Regla  16.1c)  o en el green  (Regla 16.1d)  cuando  no hay un punto  más cercano  de alivio completo . Es el punto  estimado  donde  la bola  reposaría,  que esté: •Más cerca  a la posición  original  de la bola,  pero  no más cerca  del hoyo que ese punto, •En el área  requerida  del campo , y •Donde  esa condición  anormal  del campo  menos  interfiera  con el golpe  que el jugador  habría  ejecutado  desde  la posición  original  de la bola  si la condición  no estuviera  ahí. Para  estimar  este  punto  de referencia  se requiere  que el jugador identifique  el palo  seleccionado,  stance , swing  y línea  de juego  que habría tomado  para  ese golpe. El jugador  no necesita  simular  el golpe  tomando  un stance  y efectuando el swing  con el palo  seleccionado  (pero  se recomienda  que lo haga normalmente para  ayudar  a efectuar  una correcta  estimación). El punto de máximo alivio disponible se determina  comparando la interferencia  relativa  con el lie de la bola  y el área  del stance  y swing pretendido  por el jugador,  y solo en el green,  la línea de juego . Por ejemplo, al aliviarse de agua  temporal :
+
+## Definiciones
+
+•El punto de máximo alivio disponible puede  ser donde  la bola  estará en agua  menos  profunda  que donde  el jugador  se colocará  (afectando su stance  más que el lie y swing ) o donde  la bola  estará  en agua  más profunda  que donde  el jugador  se colocará  (afectando  el lie y swing más que el stance ). •En el green , el punto  de máximo alivio disponible  puede  estar  en aquella  línea  de juego  en la que la bola  pasará  por el tramo  más corto o menos  profundo  de agua  temporal. Punto más Cercano de Alivio Completo El punto  de referencia  para  tomar  alivio  sin penalidad de una condición anormal  del campo  (Regla  16.1),  una condición  de animal  peligroso (Regla  16.2),  green  equivocado  (Regla  13.1f)  o una zona  de juego prohibido  (Reglas  16.1f  y 17.1e),  o al tomar  alivio  bajo  ciertas  Reglas Locales. Es el punto  estimado  donde  la bola  reposaría,  que esté: •Más cerca  de la posición  original  de la bola,  pero  no más cerca  del hoyo  que ese punto, •En el área  requerida  del campo , y •Donde  no hay interferencia  (bajo  la Regla  que se aplica)  de la condición  de la cual el alivio  se está  tomando  para  el golpe  que el jugador  habría  ejecutado  desde  la posición  original  si la condición  no estuviera  ahí. Para  estimar  este  punto  de referencia  se requiere  que el jugador identifique  el palo  seleccionado,  stance , swing  y línea  de juego  que habría usado  para  ese golpe. No es necesario  que el jugador  simule  el golpe  tomando  el stance  y efectuando  el swing  con el palo  seleccionado  (pero  se recomienda  que lo haga  normalmente  para  ayudar  a efectuar  una correcta  estimación). El punto  más cercano  de alivio completo se refiere  únicamente a la condición específica  de la cual se está  tomando  alivio  y puede  ser en una posición donde  haya  interferencia  por alguna  otra  condición: •Si el jugador  toma  alivio y luego  tiene  interferencia  por otra  condición de la que se permite  alivio,  el jugador  puede  aliviarse  nuevamente, determinando  un nuevo  punto  más cercano  de alivio completo  de la nueva  condición. •Se debe  tomar  alivio  separadamente  para  cada  condición,  excepto que el jugador  puede  aliviarse  de ambas  condiciones  al mismo  tiempo (basándose  en determinar  el punto  más cercano  de alivio completo  de 382Definiciones ambas  condiciones)  cuando,  habiendo  tomado  alivio  separadamente para  cada  condición,  sea razonable  concluir  que al hacerlo  de nuevo continuaría  la interferencia por una o por otra. Punto Más Cercano de Alivio Completo/1 – Diagrama Mostrando Punto Más Cercano de Alivio Completo En los diagramas,  el término  “punto  más cercano  de alivio completo”  en la Regla  16.1  (Condiciones  Anormales  del Campo)  para  aliviarse  de una interferencia  por obstrucción inamovible  está mostrada  en el caso de un jugador  diestro. El punto  más cercano  de alivio completo  debe ser estrictamente interpretado. Un jugador  no tiene  permitido  elegir  en qué lado  de la obstrucción inamovible  será dropeada  la bola,  salvo  que haya dos puntos  más cercanos de alivio completo  equidistantes.  Aunque  de un lado  de la obstrucción inamovible  hay fairway  y del otro  arbustos,  si el punto  más cercano  de alivio completo  está en los arbustos,  ese es el punto  más cercano de alivio completo del jugador. DIAGRAMA PUNTO MÁS CERCANO DE ALIVIO COMPLETO /1 •El diagrama supone un jugador diestro. •El jugador tiene interferencia de la condición anormal del campo (CAG) y está autorizado a aliviarse sin penalidad. •Cuando la bola reposa en el punto B1, el punto más cercano de alivio completo está en los arbustos, donde la bola puede no estar jugable. •Esto es porque el punto del otro lado del camino, donde el jugador tendría alivio completo de la CAG, es el punto P2 que está más lejos del punto B1 que el punto P1.
+
+## Definiciones
+
+Punto  Más  Cercano  de Alivio  Completo/2  – Jugador  No Sigue Procedimiento  Recomendado  al Determinar  el Punto
+
+## Más Cercano  de Alivio  Completo
+
+A pesar de  que hay un procedimiento  recomendado para  determinar el punto  más cercano  de alivio completo , las Reglas  no exigen  a un jugador  a fijar ese  punto  al aliviarse  bajo  la Regla  aplicable  (como  cuando  está tomando alivio  de una condición  anormal  del campo  bajo  la Regla  16.1b (Alivio  para  Bola  en el Área  General)).  Si un jugador  no define  con precisión  un punto  más cercano  de alivio completo  o identifica  uno incorrecto,  solo será penalizado  si ello resulta  en dropear  la bola  en un área de alivio  que no satisface  los requerimientos  de la Regla  y la bola  es jugada. Punto  Más  Cercano  de Alivio  Completo/3  – Si el Jugador  Se Alivió  Incorrectamente  Si la Condición  Aún Interfiere para  un Golpe  con Palo  No Utilizado  para Determinar  el Punto  Más  Cercano  de Alivio  Completo Cuando  un jugador está aliviándose  de una condición  anormal del campo , se está aliviando sólo de la interferencia  que tenía con el palo,  stance , swing  y línea  de juego  que hubiera  utilizado  para  jugar  la bola  desde  ese lugar. Luego  de aliviarse  y no habiendo  más interferencia  para  el golpe que el jugador hubiera ejecutado, cualquier interferencia posterior  es una nueva  situación. Por ejemplo,  la bola  de un jugador  reposa  en rough  espeso  en el área general  aproximadamente  a 230 yardas  del green . El jugador  selecciona un wedge para  ejecutar  el próximo  golpe  y ve que su stance  toca  una línea definiendo  una zona  de terreno  en reparación . Determina  el punto  más cercano  de alivio completo  y dropea  una bola  en el área de alivio  prescrita de acuerdo  a la Regla  14.3b(3)  (Bola  Debe  Dropearse  en el Área  de Alivio)  y la Regla 16.1 (Alivio  de Condición  Anormal del Campo). La bola  rueda  a un buen  lie dentro  del área  de alivio  desde  donde  el jugador cree  que el próximo  golpe  podría  jugarse  con una madera  3. Si el jugador usara  un wedge  para  el próximo  golpe  no habría  interferencia  del terreno en reparación . Sin embargo,  usando  la madera  3 el jugador  nuevamente toca  con un pie la línea que define  el terreno  en reparación . Esta  es una nueva situación  y el jugador  puede  jugar  la bola  como  reposa  o aliviarse  de la nueva  situación. Punto  Más  Cercano  de Alivio  Completo/4  – Jugador Determina el Punto  Más  Cercano  de Alivio  Completo pero Físicamente Imposibilitado  de Ejecutar  el Golpe  que
+
+## Pretende
+
+El propósito  de determinar  el punto  más cercano  de alivio completo  es encontrar  un punto  de referencia  en una ubicación  que esté lo más cerca posible  de donde  la condición  que interfiere  no lo haga más.  Al determinar 384Definiciones el punto  más cercano  de alivio completo , el jugador  no tiene garantizado un lie bueno  o jugable. Por ejemplo,  si un jugador está  imposibilitado  de ejecutar un  golpe  desde donde  parece  estar  el área  de alivio  medida  desde  el punto  más cercano de alivio completo  porque  tanto  la dirección  de juego  está bloqueada  por un árbol,  o el jugador  no puede  hacer  el backswing  para  el golpe  que pretende debido  a un arbusto,  esto  no cambia  el hecho  de que el punto identificado es el punto  más cercano  de alivio completo . Luego  de que la bola  está en juego , el jugador  debe  decidir  qué tipo de golpe  ejecutará . Este  golpe , que incluye  la elección  de palo,  puede  ser diferente  de aquel  que habría  ejecutado  desde  la posición  original  de la bola  si la condición  no hubiera  estado  allí. Si no es físicamente  posible  dropear  la bola  en cualquier  parte  del área  de alivio  identificada,  el jugador  no tiene permitido  aliviarse  de la condición. Punto  Más  Cercano  de Alivio  Completo/5  – Jugador Imposibilitado  Físicamente  de Establecer  el Punto  Más
+
+## Cercano  de Alivio  Completo
+
+Si un jugador  está físicamente  imposibilitado  de establecer  su punto  más cercano  de alivio completo , el mismo  debe  ser estimado,  y el área de alivio  se basará  en ese punto  estimado. Por ejemplo,  al aliviarse  bajo  la Regla  16.1,  el jugador  está físicamente imposibilitado  de establecer  el punto  más cercano  de alivio completo porque ese  punto  está dentro  del tronco  de un árbol  o un cerco  de límites impide al jugador  tomar  el stance  requerido. El jugador  debe  estimar  el punto  más cercano  de alivio completo  y dropear una bola  en el área de alivio  identificada. Si no es físicamente  posible  dropear  una bola  en el área  de alivio establecida,  el jugador  no tiene  derecho  a aliviarse  bajo  la Regla  16.1.
+
+## Reglas  de Equipo
+
+Las especificaciones  y otras  regulaciones  para  palos,  bolas  y otro equipo que los jugadores  tienen  permitido  usar  durante  una ronda . Las Reglas de equipo  se encuentran  en USGA .org/EquipmentStandards .
+
+## Recolocar
+
+Colocar  una bola,  apoyándola con la mano  y soltándola, con la intención de ponerla  en juego.
+
+## Definiciones
+
+Si el jugador  coloca  una bola  apoyándola  sin la intención  de ponerla  en juego , la bola  no ha sido recolocada  y no está  en juego  (ver Regla 14.4) Siempre  que una Regla  requiera  que una bola  sea recolocada , la Regla involucrada identifica  un punto  específico  donde  la bola  debe ser recolocada. Ver Reglas 25.3d  y 25.4e  (para  jugadores  amputados  o que usan  un dispositivo  de movilidad  asistida,  la definición  es modificada  para  permitir recolocar  la bola  usando  equipo).
+
+## Ronda
+
+18 hoyos  o un número  menor  de hoyos  jugados  en el orden establecido por el Comité.
+
+## Score Máximo
+
+Una modalidad  de stroke play  en la que el score  de un jugador  o bando para  un hoyo  se limita  a un número  máximo  de golpes  (incluyendo los golpes ejecutados  y de penalidad)  establecido por  el Comité , como  por ejemplo  dos veces  el par, un número  fijo o un doble  bogey  neto.
+
+## Stableford
+
+Una modalidad de stroke play , donde: •El resultado  de un jugador  o bando  para  un hoyo  se establece  en forma  de puntos  obtenidos  al comparar  el score  del jugador  o del bando  (incluyendo  los golpes  ejecutados  y de penalidad)  con un score  fijo para  el hoyo  establecido  como  objetivo  por el Comité,  y •La competencia  es ganada por el jugador  o bando  que completa todas  las rondas con el mayor  puntaje.
+
+## Stance
+
+La posición  de los pies y el cuerpo  del jugador  al prepararse  y ejecutar  un golpe. Ver Regla  25.4d  (para  jugadores  que usan  dispositivos  de movilidad asistida,  la definición  es modificada  para  incluir  la posición  del dispositivo de movilidad  asistida  al prepararse  y ejecutar  un golpe).
+
+## Sustituir
+
+Cambiar  la bola  que el jugador  está  usando  para  jugar  un hoyo,  haciendo que otra  se convierta  en la bola  en juego .
+
+## Definiciones
+
+La bola  ha sido sustituida  cuando  se pone  otra  bola  en juego  de cualquier manera  (ver Regla  14.4) en  lugar  de la  bola  original,  si la misma  estaba: •En juego,  o •No estaba en juego  porque  había sido levantada  del campo , o estaba perdida  o fuera  de límites . Una bola  sustituta  es la bola  en juego  del jugador,  aun si: •Fue recolocada,  dropeada o colocada  de una manera incorrecta  o en un lugar  equivocado . •El jugador  estaba  obligado  bajo  las Reglas  a poner  de nuevo  su bola original  en juego  en lugar  de sustituirla  por otra bola .
+
+## Tarjeta de Score
+
+El documento  donde  el score  de un jugador  para  cada  hoyo  se anota  en stroke play . La tarjeta  de score puede ser  de papel  o de formato  electrónico aprobado por el Comité,  que permita: •Registrar  el score  del jugador  para  cada  hoyo,  y •Que el anotador  y el jugador  certifiquen  los scores,  ya sea por firma física  o mediante  un método de  certificación  electrónica  aprobado  por el Comité . Una tarjeta de score  no es requerida  en match  play, pero  puede  ser utilizada por los jugadores  para  ayudarles  a conocer  el resultado  del match.
+
+## Tee
+
+Un objeto  utilizado  para  acomodar  una bola  por encima  del suelo  al jugarla  desde  el área  de salida . No debe  medir  más de 101,6 mm (4 pulgadas)  y debe  ser conforme  con la Reglas  de Equipo .
+
+## Terreno en Reparación
+
+Cualquier  parte  del campo  que el  Comité defina  como terreno  en reparación  (ya sea marcándolo  o de otra  manera).  Cualquier  terreno  en reparación  definido  incluye: •Todo  el terreno  dentro  del margen del área definida,  y •Cualquier  pasto,  arbusto,  árbol  u otro  objeto  natural en crecimiento o enraizado  en el área  definida, incluyendo  cualquier  parte  de esos objetos  que se extiende por encima  del suelo  fuera  del margen  del área  definida,  (pero  no cuando  tal objeto  está  unido  o debajo  del terreno  afuera del margen del área  definida, como  una raíz de árbol que es parte  de un árbol  enraizado  dentro  del margen). 387Definiciones Terreno  en reparación  también  incluye  las siguientes  cosas,  aunque  el Comité  no lo  haya  definido  como tal: •Cualquier agujero  hecho por  el Comité o personal de mantenimiento , al: » Preparar el campo (como el agujero  que queda  al quitar una estaca o el hoyo  en un green  doble  usado  para  el juego  de otro  hoyo),  o » Mantener  el campo  (como  un agujero  hecho  al quitar  pasto  o un tocón,  o al instalar  tuberías,  pero  no se incluyen  los agujeros  de aireación). •El pasto  cortado,  hojas  y cualquier  otro  material  apilado  para  su remoción.  Pero: » Otros  materiales  naturales  apilados  para  su remoción  son también impedimentos  sueltos , y » Cualquier  material dejado en el campo  y que no se tenga intención de retirar,  no es terreno  en reparación  a menos  que el Comité  lo haya  declarado  como  tal. •Cualquier  hábitat  de animal  (como  un nido  de pájaro)  que está tan cerca  de una bola  del jugador  que su golpe  o stance  podría dañarlo,  excepto  cuando  el hábitat  ha sido hecho  por animales  que son definidos  como  impedimentos  sueltos  (tales  como  gusanos  o insectos). El margen  de un terreno  en reparación debería  ser definido por  estacas, líneas  o elementos  físicos: •Estacas : Cuando  está  definido  por estacas,  el margen  del terreno  en reparación  está  definido  por la línea  entre  los puntos  exteriores  de las estacas  al nivel  del suelo,  y las estacas  están  dentro  del terreno  de reparación . •Líneas : Cuando  está  definido  por una línea  pintada  en el suelo,  el margen  del terreno en  reparación  está definido  por su borde  exterior y la línea  está  dentro  del mismo. •Elementos Físicos : Cuando está definido por elementos  físicos (como un cantero  o un vivero),  el Comité  debería  establecer  cómo  está definido  el margen  del terreno  en reparación . Cuando  el margen  del terreno  en reparación  está  definido  por líneas  o elementos  físicos,  se pueden utilizar  estacas  para  identificar  donde  está localizado el  terreno  en reparación . Cuando  se usan  estacas  para  definir  o mostrar  el margen del terreno  en reparación , estás son  obstrucciones.
+
+## Definiciones
+
+Terreno  en Reparación/ 1 – Daño  Causado  por El Comité o Personal  de Mantenimiento  No Siempre  es Terreno  en
+
+## Reparación
+
+Un agujero  hecho  por personal  de mantenimiento  es terreno  en reparación  aunque no esté marcado  como  tal. No obstante,  no todo  daño causado  por personal  de mantenimiento  es predeterminadamente  terreno en reparación . Ejemplos  de daños  que no son predeterminadamente  terreno  en reparación , incluyen: •Una huella  hecha  por un tractor  (pero  el Comité  está  justificado  en declarar  una huella profunda  como  terreno  en reparación ). •Un tapón  de hoyo  antiguo  que está  hundido  por debajo  de la superficie  del green , pero  ver Regla  13.1c  (Mejoras  Permitidas  en el Green). Terreno  en Reparación/2  – Bola  en Árbol  Enraizado  en Terreno  en Reparación  Está  en el Terreno  en Reparación Si un árbol  está enraizado  en terreno  en reparación  y la bola  de un jugador está en una rama  de ese árbol,  la bola  está en terreno  en reparación aunque  la rama  se extienda afuera  del área  definida. Si el jugador  decide  aliviarse  bajo  la Regla  16.1,  y el punto inmediatamente debajo de donde  la bola  reposa  está fuera  del terreno  en reparación , ese es el punto  de referencia  para  determinar  el área  de alivio y aliviarse. Pero,  si el punto  en el suelo  directamente  debajo de donde  la bola  reposa en el árbol  está en terreno  en reparación  (o en ese punto  existe  otra interferencia  como si  el jugador  fuera  a pararse  en la condición) ese punto debería  ser usado  como  referencia  para  encontrar  el punto  más cercano de alivio completo. Terreno  en Reparación/3  – Árbol  Caído  o Tocón  de Árbol No Siempre  Es Terreno  en Reparación Un árbol  caído  o un tocón  de árbol  que el Comité  va a remover, pero no está en proceso  de ser quitado,  no es automáticamente  terreno  en reparación . Sin embargo,  si el árbol  y el tocón  de árbol  están  en proceso de ser desenterrados  o cortados  para  luego  removerlos,  son “materiales apilados  para  su remoción”  y por lo tanto  terreno  en reparación . Por ejemplo,  un árbol,  que ha caído  en el área  general  y aún está adherido al tocón,  no es terreno  en reparación . Sin embargo,  un jugador  podría solicitar  alivio  al Comité  y éste estaría  justificado  en declarar  el área cubierta  por el árbol  caído  como  terreno  en reparación .
+
+## Definiciones
+
+
+
+## Three -Ball
+
+Una modalidad  de match  play donde: •Cada  uno de los tres jugadores  juega  un match  individual  contra  los otros  dos jugadores  simultáneamente,  y •Cada  jugador  juega  una única  bola  que es utilizada  para  ambos matches.
+
+## Zona de Juego Prohibido
+
+Una parte  del campo  en la que el Comité  ha prohibido  el juego.  Una zona  de juego  prohibido  debe  ser definida como  parte  de una condición anormal del campo  o de un área  de penalidad. El Comité puede establecer zonas de juego prohibido por varios motivos, como: •Proteger  la fauna silvestre,  hábitats de animales, y zonas ambientalmente  sensibles, •Impedir  que se dañen  árboles  jóvenes,  canteros,  viveros,  zonas resembradas  u otras zonas plantadas, •Proteger  a los jugadores  de un peligro,  y •Conservar  lugares de interés histórico o cultural. El Comité  debería  definir  el margen  de una zona  de juego  prohibido con una línea  o estacas  y la línea  o estacas  (o la parte  superior  de esas estacas) deben identificar  la zona  de juego  prohibido  de una manera diferente  a una condición anormal  del campo o área  de penalidad que no contiene  una zona  de juego  prohibido . Zona  de Juego  Prohibido/1  – Condición  de Cosas  en Crecimiento  Sobrepasando  una Zona  de Juego  Prohibido La condición  de cosas  en crecimiento  que sobrepasan  una zona  de juego prohibido  depende  del tipo de zona  de juego  prohibido . Esto  tendrá importancia  ya que las cosas  en crecimiento  pueden  ser parte  de la zona  de juego  prohibido  en cuyo  caso  el jugador  está obligado  a aliviarse. Por ejemplo,  si una zona  de juego  prohibido  ha sido definida  como  un área de penalidad (donde  los límites  se extienden  hacia arriba  y abajo  del terreno),  cualquier  parte  de un objeto  en crecimiento  que se extiende  más 390Definiciones allá de los límites  de la zona  de juego  prohibido  no es parte  de ésta  última . Sin embargo,  si una zona  de juego  prohibido  ha sido definida  como  terreno  en reparación  (que  incluye  todo  el terreno  dentro  del área  definida  y cualquier cosa  en crecimiento  que se extiende  sobre  el terreno  y fuera  de sus límites), cualquier  cosa  sobrepasando  el borde  es parte  de la zona  de juego  prohibido .

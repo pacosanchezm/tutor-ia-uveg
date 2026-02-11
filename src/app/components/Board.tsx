@@ -9,6 +9,8 @@ export interface BoardProps {
   isExpanded: boolean;
   expandedWidthClass?: string;
   contentKey: BoardContentAction;
+  flashcardQuestion?: string;
+  flashcardAnswer?: string;
 }
 
 type BoardContentKey = Exclude<BoardContentAction, "CLEAN">;
@@ -221,9 +223,19 @@ const boardContentMap: Record<BoardContentKey, {
     imageAlt: "Bastones Callaway",
     button: { label: "Comprar", href: "https://www.callawaygolf.com/" },
   },
+  GOLF_FLASHCARD: {
+    title: "Flashcard",
+    bullets: ["Escucha la pregunta y responde con tus palabras."],
+  },
 };
 
-function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
+function Board({
+  isExpanded,
+  expandedWidthClass,
+  contentKey,
+  flashcardQuestion,
+  flashcardAnswer,
+}: BoardProps) {
   const widthWhenExpanded = expandedWidthClass ?? "w-1/2 overflow-auto";
   const containerClass =
     (isExpanded ? widthWhenExpanded : "w-0 overflow-hidden opacity-0") +
@@ -233,6 +245,7 @@ function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
     contentKey === "CLEAN"
       ? null
       : boardContentMap[contentKey as Exclude<BoardContentAction, "CLEAN">];
+  const isFlashcardMode = contentKey === "GOLF_FLASHCARD";
   const stateMachineName = "State Machine 1";
   const { rive, RiveComponent } = useRive({
     src: "/uveg.riv",
@@ -322,6 +335,26 @@ function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
+                {isFlashcardMode && flashcardQuestion ? (
+                  <div className="mt-4 rounded-lg border border-blue-200 bg-blue-50 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
+                      Pregunta
+                    </p>
+                    <p className="mt-2 text-base font-medium text-gray-900">
+                      {flashcardQuestion}
+                    </p>
+                  </div>
+                ) : null}
+                {isFlashcardMode && flashcardAnswer ? (
+                  <div className="mt-3 rounded-lg border border-emerald-200 bg-emerald-50 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                      Respuesta
+                    </p>
+                    <p className="mt-2 text-base font-medium text-gray-900">
+                      {flashcardAnswer}
+                    </p>
+                  </div>
+                ) : null}
                 <div className="mt-6 border border-gray-200 rounded-lg bg-gray-50 p-2 flex-1 flex flex-col items-center justify-center gap-3">
                   {content.image ? (
                     content.image.startsWith("http") ? (
@@ -344,6 +377,14 @@ function Board({ isExpanded, expandedWidthClass, contentKey }: BoardProps) {
                         />
                       </div>
                     )
+                  ) : isFlashcardMode ? (
+                    <div className="h-full w-full flex items-center justify-center text-gray-500 italic text-center px-6">
+                      {flashcardAnswer
+                        ? "Revisa la respuesta y continua con la siguiente tarjeta."
+                        : flashcardQuestion
+                          ? "Responde la pregunta mostrada arriba."
+                          : "Esperando pregunta de flashcard..."}
+                    </div>
                   ) : RiveComponent ? (
                     <RiveComponent style={{ width: "100%", height: "100%" }} />
                   ) : (
