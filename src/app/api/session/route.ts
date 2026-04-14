@@ -5,7 +5,7 @@ export async function GET(request: NextRequest) {
   const model = searchParams.get("model") ?? "gpt-realtime";
   try {
     const response = await fetch(
-      "https://api.openai.com/v1/realtime/sessions",
+      "https://api.openai.com/v1/realtime/client_secrets",
       {
         method: "POST",
         headers: {
@@ -17,6 +17,17 @@ export async function GET(request: NextRequest) {
         }),
       }
     );
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Error creating realtime client secret:", errorText);
+      return NextResponse.json(
+        {
+          error: "Failed to create realtime client secret",
+          details: errorText,
+        },
+        { status: response.status }
+      );
+    }
     const data = await response.json();
     return NextResponse.json(data);
   } catch (error) {

@@ -29,6 +29,7 @@ import { universityTutorScenario, universityTutorInstitutionName } from "@/app/a
 import { universityTutorEvaluationScenario } from "@/app/agentConfigs/universityTutorEvaluation";
 import { golfTutorScenario, golfTutorInstitutionName } from "@/app/agentConfigs/golfTutor";
 import { golfTutorDefsScenario, golfTutorDefsInstitutionName } from "@/app/agentConfigs/golfTutorDefs";
+import { golfRulesOfficialScenario, golfRulesOfficialInstitutionName } from "@/app/agentConfigs/golfRulesOfficial";
 import { agentBranding } from "@/app/agentConfigs/branding";
 
 // Map used by connect logic for scenarios defined via the SDK.
@@ -37,6 +38,7 @@ const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
   universityTutorEvaluation: universityTutorEvaluationScenario,
   golfTutor: golfTutorScenario,
   golfTutorDefs: golfTutorDefsScenario,
+  golfRulesOfficial: golfRulesOfficialScenario,
 };
 
 import useAudioDownload from "./hooks/useAudioDownload";
@@ -290,6 +292,7 @@ function App() {
           universityTutorEvaluation: universityTutorInstitutionName,
           golfTutor: golfTutorInstitutionName,
           golfTutorDefs: golfTutorDefsInstitutionName,
+          golfRulesOfficial: golfRulesOfficialInstitutionName,
         };
         const companyName = companyNameMap[agentSetKey] ?? universityTutorInstitutionName;
         const guardrail = createModerationGuardrail(companyName);
