@@ -19,6 +19,7 @@ export interface ConnectOptions {
   getEphemeralKey: () => Promise<string>;
   initialAgents: RealtimeAgent[];
   audioElement?: HTMLAudioElement;
+  mediaStream?: MediaStream;
   extraContext?: Record<string, any>;
   outputGuardrails?: any[];
   model?: string;
@@ -26,6 +27,9 @@ export interface ConnectOptions {
 
 export function useRealtimeSession(callbacks: RealtimeSessionCallbacks = {}) {
   const sessionRef = useRef<RealtimeSession | null>(null);
+  const fallbackAudioContextRef = useRef<AudioContext | null>(null);
+  const fallbackAudioSourceRef = useRef<ConstantSourceNode | OscillatorNode | null>(null);
+  const fallbackMediaStreamRef = useRef<MediaStream | null>(null);
   const [status, setStatus] = useState<
     SessionStatus
   >('DISCONNECTED');
@@ -116,6 +120,7 @@ export function useRealtimeSession(callbacks: RealtimeSessionCallbacks = {}) {
       getEphemeralKey,
       initialAgents,
       audioElement,
+      mediaStream,
       extraContext,
       outputGuardrails,
       model,
@@ -125,11 +130,66 @@ export function useRealtimeSession(callbacks: RealtimeSessionCallbacks = {}) {
       updateStatus('CONNECTING');
 
       const ek = await getEphemeralKey();
+      if (!ek) {
+        updateStatus('DISCONNECTED');
+        return;
+      }
       const rootAgent = initialAgents[0];
+
+      let resolvedMediaStream = mediaStream;
+      if (!resolvedMediaStream && typeof window !== 'undefined') {
+        try {
+          resolvedMediaStream = await navigator.mediaDevices.getUserMedia({
+            audio: true,
+          });
+        } catch (error) {
+          const mediaError = error as DOMException;
+          if (mediaError?.name !== 'NotFoundError') {
+            throw error;
+          }
+
+          const AudioContextCtor =
+            window.AudioContext ||
+            ((window as typeof window & { webkitAudioContext?: typeof AudioContext })
+              .webkitAudioContext as typeof AudioContext | undefined);
+
+          if (!AudioContextCtor) {
+            throw error;
+          }
+
+          const audioContext = new AudioContextCtor();
+          const destination = audioContext.createMediaStreamDestination();
+          const source =
+            typeof audioContext.createConstantSource === 'function'
+              ? audioContext.createConstantSource()
+              : audioContext.createOscillator();
+
+          if ('offset' in source) {
+            source.offset.value = 0;
+          }
+          if ('frequency' in source) {
+            source.frequency.value = 0;
+          }
+
+          source.connect(destination);
+          source.start();
+
+          fallbackAudioContextRef.current = audioContext;
+          fallbackAudioSourceRef.current = source;
+          fallbackMediaStreamRef.current = destination.stream;
+          resolvedMediaStream = destination.stream;
+
+          logClientEvent(
+            { reason: mediaError.name },
+            'warning.microphone_not_found_using_silent_stream',
+          );
+        }
+      }
 
       sessionRef.current = new RealtimeSession(rootAgent, {
         transport: new OpenAIRealtimeWebRTC({
           audioElement,
+          mediaStream: resolvedMediaStream,
           // Set preferred codec before offer creation
           changePeerConnection: async (pc: RTCPeerConnection) => {
             applyCodec(pc);
@@ -155,6 +215,12 @@ export function useRealtimeSession(callbacks: RealtimeSessionCallbacks = {}) {
   const disconnect = useCallback(() => {
     sessionRef.current?.close();
     sessionRef.current = null;
+    fallbackMediaStreamRef.current?.getTracks().forEach((track) => track.stop());
+    fallbackMediaStreamRef.current = null;
+    fallbackAudioSourceRef.current?.disconnect();
+    fallbackAudioSourceRef.current = null;
+    void fallbackAudioContextRef.current?.close();
+    fallbackAudioContextRef.current = null;
     updateStatus('DISCONNECTED');
   }, [updateStatus]);
 
