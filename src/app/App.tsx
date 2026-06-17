@@ -259,9 +259,22 @@ function App() {
     const data = await tokenResponse.json();
     logServerEvent(data, "fetch_session_token_response");
 
+    if (!tokenResponse.ok) {
+      logClientEvent(
+        { status: tokenResponse.status, ...data },
+        "error.session_token_request_failed",
+      );
+      console.error("Realtime session request failed", tokenResponse.status, data);
+      setSessionStatus("DISCONNECTED");
+      return null;
+    }
+
     if (!data.client_secret?.value) {
       logClientEvent(data, "error.no_ephemeral_key");
-      console.error("No ephemeral key provided by the server");
+      console.error(
+        "No ephemeral key provided by the server",
+        data?.error ?? data?.details ?? data,
+      );
       setSessionStatus("DISCONNECTED");
       return null;
     }

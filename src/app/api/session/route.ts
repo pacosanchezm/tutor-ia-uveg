@@ -4,6 +4,16 @@ export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const model = searchParams.get("model") ?? "gpt-realtime";
   try {
+    if (!process.env.OPENAI_API_KEY) {
+      return NextResponse.json(
+        {
+          error: "Missing OPENAI_API_KEY",
+          details: "Set OPENAI_API_KEY in the server environment before requesting a realtime session.",
+        },
+        { status: 500 }
+      );
+    }
+
     const headers = {
       Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
       "Content-Type": "application/json",
@@ -48,7 +58,29 @@ export async function GET(request: NextRequest) {
     }
 
     const data = await response.json();
-    return NextResponse.json(data);
+    const clientSecretValue =
+      data?.client_secret?.value ??
+      data?.client_secret ??
+      data?.value ??
+      data?.secret ??
+      null;
+
+    if (!clientSecretValue) {
+      return NextResponse.json(
+        {
+          error: "Realtime session created without client secret",
+          details: data,
+        },
+        { status: 502 }
+      );
+    }
+
+    return NextResponse.json({
+      ...data,
+      client_secret: {
+        value: clientSecretValue,
+      },
+    });
   } catch (error) {
     console.error("Error in /session:", error);
     return NextResponse.json(
