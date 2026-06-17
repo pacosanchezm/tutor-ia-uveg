@@ -18,9 +18,14 @@ export async function GET(request: NextRequest) {
       Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
       "Content-Type": "application/json",
     };
-    const payload = JSON.stringify({ model });
+    const payload = JSON.stringify({
+      session: {
+        type: "realtime",
+        model,
+      },
+    });
 
-    let response = await fetch(
+    const response = await fetch(
       "https://api.openai.com/v1/realtime/client_secrets",
       {
         method: "POST",
@@ -31,30 +36,14 @@ export async function GET(request: NextRequest) {
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.warn(
-        "Realtime client_secrets rejected request, falling back to sessions:",
-        errorText
+      console.error("Realtime client_secrets rejected request:", errorText);
+      return NextResponse.json(
+        {
+          error: "Failed to create realtime client secret",
+          details: errorText,
+        },
+        { status: response.status }
       );
-      response = await fetch("https://api.openai.com/v1/realtime/sessions", {
-        method: "POST",
-        headers,
-        body: payload,
-      });
-
-      if (!response.ok) {
-        const fallbackErrorText = await response.text();
-        console.error(
-          "Error creating realtime session after fallback:",
-          fallbackErrorText
-        );
-        return NextResponse.json(
-          {
-            error: "Failed to create realtime session",
-            details: fallbackErrorText,
-          },
-          { status: response.status }
-        );
-      }
     }
 
     const data = await response.json();
