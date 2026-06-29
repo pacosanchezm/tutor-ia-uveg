@@ -30,6 +30,8 @@ import { universityTutorEvaluationScenario } from "@/app/agentConfigs/university
 import { golfTutorScenario, golfTutorInstitutionName } from "@/app/agentConfigs/golfTutor";
 import { golfTutorDefsScenario, golfTutorDefsInstitutionName } from "@/app/agentConfigs/golfTutorDefs";
 import { golfRulesOfficialScenario, golfRulesOfficialInstitutionName } from "@/app/agentConfigs/golfRulesOfficial";
+import { germanTelcB1TutorScenario, germanTelcB1TutorInstitutionName } from "@/app/agentConfigs/germanTelcB1Tutor";
+import { germanTelcB1RoleplayOptions } from "@/app/agentConfigs/germanTelcB1Tool";
 import { agentBranding } from "@/app/agentConfigs/branding";
 
 // Map used by connect logic for scenarios defined via the SDK.
@@ -39,6 +41,7 @@ const sdkScenarioMap: Record<string, RealtimeAgent[]> = {
   golfTutor: golfTutorScenario,
   golfTutorDefs: golfTutorDefsScenario,
   golfRulesOfficial: golfRulesOfficialScenario,
+  germanTelcB1Tutor: germanTelcB1TutorScenario,
 };
 
 import useAudioDownload from "./hooks/useAudioDownload";
@@ -142,6 +145,13 @@ function App() {
       return localStorage.getItem("realtimeModel") ?? "gpt-realtime-mini";
     },
   );
+  const [selectedTelcB1RoleplayId, setSelectedTelcB1RoleplayId] =
+    useState<string>(() => {
+      const defaultRoleplayId =
+        germanTelcB1RoleplayOptions[0]?.roleplayId ?? "";
+      if (typeof window === "undefined") return defaultRoleplayId;
+      return localStorage.getItem("telcB1RoleplayId") ?? defaultRoleplayId;
+    });
   const [studentName, setStudentName] = useState<string>(() => {
     if (typeof window === "undefined") return "";
     return localStorage.getItem("studentName") ?? "";
@@ -306,6 +316,7 @@ function App() {
           golfTutor: golfTutorInstitutionName,
           golfTutorDefs: golfTutorDefsInstitutionName,
           golfRulesOfficial: golfRulesOfficialInstitutionName,
+          germanTelcB1Tutor: germanTelcB1TutorInstitutionName,
         };
         const companyName = companyNameMap[agentSetKey] ?? universityTutorInstitutionName;
         const guardrail = createModerationGuardrail(companyName);
@@ -320,6 +331,10 @@ function App() {
           extraContext: {
             addTranscriptBreadcrumb,
             handleBoardContentAction,
+            selectedTelcB1RoleplayId:
+              agentSetKey === "germanTelcB1Tutor"
+                ? selectedTelcB1RoleplayId
+                : undefined,
           },
           model: selectedRealtimeModel,
         });
@@ -379,10 +394,19 @@ function App() {
 
     // Send an initial greeting so the agent starts the conversation
     if (shouldTriggerResponse) {
+      const currentAgentSetKey = searchParams.get("agentConfig") || "default";
       const trimmedName = studentName.trim();
-      const greeting = trimmedName
-        ? `Hola, soy ${trimmedName}.`
-        : 'Hola';
+      const selectedRoleplay = germanTelcB1RoleplayOptions.find(
+        (roleplay) => roleplay.roleplayId === selectedTelcB1RoleplayId,
+      );
+      const greeting =
+        currentAgentSetKey === "germanTelcB1Tutor" && selectedRoleplay
+          ? trimmedName
+            ? `Hallo, ich bin ${trimmedName}. Ich moechte das Roleplay "${selectedRoleplay.title}" ueben. Bitte starte mit roleplay_id "${selectedRoleplay.roleplayId}".`
+            : `Hallo. Ich moechte das Roleplay "${selectedRoleplay.title}" ueben. Bitte starte mit roleplay_id "${selectedRoleplay.roleplayId}".`
+          : trimmedName
+            ? `Hola, soy ${trimmedName}.`
+            : 'Hola';
       sendSimulatedUserMessage(greeting);
     }
     return;
@@ -447,6 +471,25 @@ function App() {
     disconnectFromRealtime();
     setSelectedAgentName(newAgentName);
     // connectToRealtime will be triggered by effect watching selectedAgentName
+  };
+
+  const handleTelcB1RoleplayChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const roleplayId = e.target.value;
+    setSelectedTelcB1RoleplayId(roleplayId);
+
+    if (sessionStatus !== "CONNECTED") return;
+    const selectedRoleplay = germanTelcB1RoleplayOptions.find(
+      (roleplay) => roleplay.roleplayId === roleplayId,
+    );
+    if (!selectedRoleplay) return;
+
+    try {
+      sendUserText(
+        `Bitte wechsle zum Roleplay "${selectedRoleplay.title}" mit roleplay_id "${selectedRoleplay.roleplayId}".`,
+      );
+    } catch (err) {
+      console.error("Failed to send roleplay switch via SDK", err);
+    }
   };
 
   // Because we need a new connection, refresh the page when codec changes
@@ -534,6 +577,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem("studentName", studentName);
   }, [studentName]);
+
+  useEffect(() => {
+    localStorage.setItem("telcB1RoleplayId", selectedTelcB1RoleplayId);
+  }, [selectedTelcB1RoleplayId]);
 
   useEffect(() => {
     if (!isSettingsMenuOpen) return;
@@ -754,6 +801,25 @@ function App() {
                         </svg>
                       </div>
                     </div>
+                  </div>
+                )}
+
+                {agentSetKey === "germanTelcB1Tutor" && (
+                  <div>
+                    <label className="block text-sm font-medium text-gray-600 mb-1">
+                      Roleplay
+                    </label>
+                    <select
+                      value={selectedTelcB1RoleplayId}
+                      onChange={handleTelcB1RoleplayChange}
+                      className="border border-gray-300 rounded-md text-sm px-2 py-1 w-full focus:outline-none"
+                    >
+                      {germanTelcB1RoleplayOptions.map((roleplay) => (
+                        <option key={roleplay.roleplayId} value={roleplay.roleplayId}>
+                          {roleplay.title}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                 )}
 

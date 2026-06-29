@@ -30,4 +30,9 @@ export const agentBranding: Record<string, AgentBranding> = {
     logoSrc: "",
     logoAlt: "",
   },
+  germanTelcB1Tutor: {
+    title: "German telc B1 Tutor",
+    logoSrc: "",
+    logoAlt: "",
+  },
 };
